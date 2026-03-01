@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aave V3 Gnosis — Organic Demand Analysis</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2309354F'/><text x='16' y='23' font-family='system-ui' font-size='20' font-weight='700' fill='%23fff' text-anchor='middle'>N</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&display=swap">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --petrol: #09354F;
+    --petrol-light: #105F7C;
+    --coral: #FF8566;
+    --coral-dim: #cc6b52;
+    --bg: #0a0a0b;
+    --surface: #131315;
+    --surface-hover: #19191c;
+    --border: #232328;
+    --text: #e8e8ea;
+    --text-dim: #8a8a90;
+    --text-muted: #6a6a70;
+    --green: #4ade80;
+    --red: #f87171;
+    --yellow: #fbbf24;
+    --blue: #60a5fa;
+    --purple: #a78bfa;
+    --radius: 8px;
+    --radius-sm: 5px;
+  }
+
+  body {
+    font-family: 'DM Sans', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .mono { font-family: 'DM Mono', monospace; }
+
+  /* ---- Layout ---- */
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  header {
+    padding: 3rem 0 1.75rem;
+  }
+  header .brand {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--coral);
+    margin-bottom: 0.5rem;
+  }
+  header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.3rem;
+  }
+  header .subtitle {
+    color: var(--text-dim);
+    font-size: 0.82rem;
+  }
+
+  section {
+    margin-bottom: 2.75rem;
+  }
+  section h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  section h2 .badge {
+    font-size: 0.58rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.06);
+    color: var(--text-muted);
+  }
+  .section-note {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+    max-width: 90ch;
+  }
+
+  /* ---- Summary strip ---- */
+  .summary-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 1.75rem;
+  }
+  .stat-cell {
+    background: var(--surface);
+    padding: 1.1rem 1.25rem;
+  }
+  .stat-cell .label {
+    font-size: 0.62rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.3rem;
+  }
+  .stat-cell .value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .stat-cell .sub {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    margin-top: 0.15rem;
+  }
+
+  /* ---- Hero callout ---- */
+  .hero-callout {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--coral);
+    border-radius: var(--radius-sm);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2.75rem;
+  }
+  .hero-callout .finding {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    line-height: 1.45;
+  }
+  .hero-callout .detail {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    line-height: 1.65;
+    max-width: 80ch;
+  }
+  .hl { color: var(--coral); font-weight: 600; }
+
+  /* ---- Info callout (lighter variant) ---- */
+  .info-callout {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--yellow);
+    border-radius: var(--radius-sm);
+    padding: 1rem 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .info-callout .finding {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    line-height: 1.45;
+  }
+  .info-callout .detail {
+    font-size: 0.76rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+  }
+
+  /* ---- Stacked composition bars ---- */
+  .comp-bar-wrap { margin-bottom: 1rem; }
+  .comp-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.35rem;
+  }
+  .comp-bar-row .bar-label {
+    width: 64px;
+    font-size: 0.76rem;
+    font-weight: 500;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .comp-bar-row .bar-track {
+    flex: 1;
+    height: 32px;
+    background: var(--surface);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+  }
+  .comp-bar-row .bar-fill { height: 100%; }
+  .comp-bar-row .bar-val {
+    width: 72px;
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    text-align: right;
+    flex-shrink: 0;
+    font-family: 'DM Mono', monospace;
+  }
+
+  .fill-whale { background: var(--coral-dim); }
+  .fill-mid { background: #b8942a; }
+  .fill-retail { background: #2d9454; }
+  .fill-dao { background: #3b7abf; }
+  .fill-protocol { background: #7b5fc7; }
+
+  /* ---- Legend ---- */
+  .legend {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.68rem;
+    color: var(--text-dim);
+  }
+  .legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  /* ---- Tables ---- */
+  .table-wrap {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.78rem;
+  }
+  thead th {
+    background: var(--surface);
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    font-weight: 500;
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  thead th.right, td.right { text-align: right; }
+  tbody td {
+    padding: 0.45rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: var(--surface-hover); }
+
+  .addr {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-dim);
+  }
+  a.addr {
+    text-decoration: none;
+    color: var(--text-dim);
+  }
+  a.addr:hover {
+    text-decoration: underline;
+    color: var(--text);
+  }
+  .tag {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.12rem 0.35rem;
+    border-radius: 3px;
+  }
+  .tag-whale { background: rgba(255,133,102,0.12); color: var(--coral); }
+  .tag-mid { background: rgba(251,191,36,0.12); color: var(--yellow); }
+  .tag-retail { background: rgba(74,222,128,0.12); color: var(--green); }
+  .tag-dao { background: rgba(96,165,250,0.12); color: var(--blue); }
+  .tag-protocol { background: rgba(167,139,250,0.12); color: var(--purple); }
+
+  .show-more-btn {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 0.7rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    margin-top: 0.5rem;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .show-more-btn:hover { border-color: var(--text-muted); color: var(--text); }
+
+  /* ---- Metric boxes ---- */
+  .metric-row {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+  }
+  .metric-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0.75rem 1rem;
+    min-width: 140px;
+  }
+  .metric-box .m-label {
+    font-size: 0.58rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.2rem;
+  }
+  .metric-box .m-value {
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+  .metric-box .m-sub {
+    font-size: 0.62rem;
+    color: var(--text-muted);
+    margin-top: 0.1rem;
+  }
+
+  /* ---- Per-market cards ---- */
+  .market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.75rem;
+  }
+  .market-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.1rem;
+  }
+  .market-card h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .market-card h3 .price {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    font-family: 'DM Mono', monospace;
+  }
+  .market-stat {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+    font-size: 0.74rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .market-stat:last-child { border-bottom: none; }
+  .market-stat .s-label { color: var(--text-dim); }
+  .market-stat .s-val { font-weight: 500; font-family: 'DM Mono', monospace; font-size: 0.7rem; }
+
+  /* ---- Spread table ---- */
+  .spread-table td.spread-positive { color: var(--green); font-weight: 500; }
+  .spread-table td.spread-negative { color: var(--red); font-weight: 500; }
+
+  /* ---- Rate note ---- */
+  .rate-note {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+    font-style: italic;
+  }
+
+  /* ---- Chart ---- */
+  .chart-container {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+  }
+  canvas { width: 100%; height: 280px; display: block; }
+
+  /* ---- Footer ---- */
+  footer {
+    padding: 2rem 0 3rem;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* ---- Loading ---- */
+  #loading {
+    text-align: center;
+    padding: 6rem 2rem;
+    color: var(--text-dim);
+    font-size: 0.82rem;
+  }
+  #loading .spinner {
+    width: 20px; height: 20px;
+    border: 2px solid var(--border);
+    border-top-color: var(--coral);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    margin: 0 auto 0.75rem;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  #app { display: none; }
+
+  /* ---- Responsive ---- */
+  @media (max-width: 768px) {
+    .container { padding: 0 1.25rem; }
+    header { padding: 2rem 0 1.5rem; }
+    header h1 { font-size: 1.35rem; }
+    .summary-strip { grid-template-columns: repeat(2, 1fr); }
+    .market-grid { grid-template-columns: 1fr; }
+    .table-wrap { overflow-x: auto; }
+    .comp-bar-row .bar-label { font-size: 0.68rem; width: 52px; }
+    .comp-bar-row .bar-val { font-size: 0.62rem; width: 60px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="brand">Noca Research</div>
+    <h1>Aave V3 Gnosis — Organic Demand Analysis</h1>
+    <p class="subtitle" id="gen-date"></p>
+  </header>
+</div>
+
+<div id="loading">
+  <div class="spinner"></div>
+  <p>Loading data&hellip;</p>
+</div>
+
+<div class="container" id="app">
+  <div class="summary-strip" id="summary-strip"></div>
+
+  <div class="hero-callout" id="hero-callout"></div>
+
+  <section id="sec-whale">
+    <h2 id="whale-heading">Who Drives Borrowing?</h2>
+    <p class="section-note" id="whale-note"></p>
+    <div id="whale-dual-bar"></div>
+  </section>
+
+  <section id="sec-borrow-markets">
+    <h2 id="borrow-heading">Whale Dominance Varies by Asset</h2>
+    <p class="section-note">Bars show whale (&gt;$100K) vs mid ($10K&ndash;$100K) vs retail (&lt;$10K) composition per market.</p>
+    <div class="comp-bar-wrap" id="borrow-comp-bars"></div>
+    <div class="legend" id="borrow-legend"></div>
+    <div id="eure-callout"></div>
+    <div class="table-wrap"><table id="borrow-table"><thead></thead><tbody></tbody></table></div>
+    <button class="show-more-btn" id="borrow-more-btn">Show more</button>
+  </section>
+
+  <section id="sec-without-whales">
+    <h2>Retail Demand Is Negligible <span class="badge">Positions &lt; $10K</span></h2>
+    <p class="section-note">What does genuine retail demand look like when large and mid-size positions are removed?</p>
+    <div class="metric-row" id="no-whale-metrics"></div>
+    <div class="market-grid" id="no-whale-markets"></div>
+  </section>
+
+  <section id="sec-spread">
+    <h2>Borrow Cost vs Savings Yield</h2>
+    <p class="section-note" id="spread-note"></p>
+    <div class="table-wrap"><table class="spread-table" id="spread-table"><thead></thead><tbody></tbody></table></div>
+    <p class="rate-note">Rates as of Mar 2026. Supply/borrow APYs from Aave UI, savings yields manually sourced.</p>
+  </section>
+
+  <section id="sec-dao-cost">
+    <h2>Opportunity Cost to GnosisDAO</h2>
+    <p class="section-note" id="dao-cost-note"></p>
+    <div class="table-wrap"><table id="dao-cost-table"><thead></thead><tbody></tbody></table></div>
+    <p class="rate-note">Rates as of Mar 2026. Supply/borrow APYs from Aave UI, savings yields manually sourced.</p>
+  </section>
+
+  <section id="sec-supply">
+    <h2>Who Provides Liquidity? <span class="badge">Deposits</span></h2>
+    <p class="section-note">Who provides liquidity. GnosisDAO is a major supplier in several markets.</p>
+    <div class="comp-bar-wrap" id="supply-comp-bars"></div>
+    <div class="legend" id="supply-legend"></div>
+    <div class="table-wrap"><table id="supply-table"><thead></thead><tbody></tbody></table></div>
+    <button class="show-more-btn" id="supply-more-btn">Show more</button>
+  </section>
+
+  <section id="sec-markets">
+    <h2>Per-Market Detail</h2>
+    <p class="section-note">Detailed supply, borrow, and concentration metrics per asset.</p>
+    <button class="show-more-btn" id="market-toggle-btn">Show per-market detail</button>
+    <div class="market-grid" id="market-grid" style="display:none;margin-top:0.75rem"></div>
+  </section>
+
+  <section id="sec-history">
+    <h2>Historical Activity <span class="badge">Daily Events</span></h2>
+    <div class="chart-container">
+      <canvas id="history-chart"></canvas>
+    </div>
+  </section>
+
+  <footer>
+    <span>Noca Research &middot; Data indexed via Envio HyperSync</span>
+    <span id="footer-date"></span>
+  </footer>
+</div>
+
+<script>
+const $ = (s, p) => (p || document).querySelector(s);
+const $$ = (s, p) => [...(p || document).querySelectorAll(s)];
+
+function fmtUSD(n) {
+  if (Math.abs(n) >= 1e6) return '$' + (n / 1e6).toFixed(2) + 'M';
+  if (Math.abs(n) >= 1e3) return '$' + (n / 1e3).toFixed(1) + 'K';
+  return '$' + n.toFixed(0);
+}
+function fmtPct(n) { return n.toFixed(1) + '%'; }
+function shortAddr(a) { return a.slice(0, 6) + '\u2026' + a.slice(-4); }
+
+const WHALE_THRESHOLD = 100_000;
+const MID_THRESHOLD = 10_000;
+
+function sizeTag(usd) {
+  if (usd >= WHALE_THRESHOLD) return 'whale';
+  if (usd >= MID_THRESHOLD) return 'mid';
+  return 'retail';
+}
+
+function tagEl(type) {
+  const labels = { whale: 'Whale', mid: 'Mid', retail: 'Retail', gnosisDAO: 'DAO', protocol: 'Protocol' };
+  const span = document.createElement('span');
+  span.className = 'tag tag-' + (type === 'gnosisDAO' ? 'dao' : type);
+  span.textContent = labels[type] || type;
+  return span;
+}
+
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text != null) e.textContent = text;
+  return e;
+}
+
+function giniLabel(gini) {
+  if (gini < 0.4) return 'Low';
+  if (gini <= 0.7) return 'Moderate';
+  return 'High';
+}
+
+function computeSizeSplit(marketData, side) {
+  const buckets = marketData[side]?.buckets || [];
+  const cats = marketData[side]?.categories || {};
+  const bucketMap = {};
+  for (const b of buckets) bucketMap[b.label] = b;
+
+  const whaleUSD = (bucketMap['>$1M']?.totalUSD || 0) + (bucketMap['$500K-1M']?.totalUSD || 0) + (bucketMap['$100K-500K']?.totalUSD || 0);
+  const midUSD = (bucketMap['$50-100K']?.totalUSD || 0) + (bucketMap['$10-50K']?.totalUSD || 0);
+  const retailUSD = (bucketMap['$1-10K']?.totalUSD || 0) + (bucketMap['<$1K']?.totalUSD || 0);
+  const whaleCount = (bucketMap['>$1M']?.count || 0) + (bucketMap['$500K-1M']?.count || 0) + (bucketMap['$100K-500K']?.count || 0);
+  const midCount = (bucketMap['$50-100K']?.count || 0) + (bucketMap['$10-50K']?.count || 0);
+  const retailCount = (bucketMap['$1-10K']?.count || 0) + (bucketMap['<$1K']?.count || 0);
+
+  return { whaleUSD, midUSD, retailUSD, whaleCount, midCount, retailCount, totalUSD: marketData[side]?.totalUSD || 0, daoUSD: cats.gnosisDAO || 0, protocolUSD: cats.protocol || 0 };
+}
+
+function buildSummaryStrip(agg, dailyCount) {
+  const strip = $('#summary-strip');
+  strip.replaceChildren();
+  const items = [
+    ['Total Supply', fmtUSD(agg.totalSupplyUSD), agg.uniqueSuppliers.toLocaleString() + ' suppliers'],
+    ['Total Borrows', fmtUSD(agg.totalDebtUSD), agg.uniqueBorrowers.toLocaleString() + ' borrowers'],
+    ['Utilization', fmtPct(agg.utilization), ''],
+    ['Events Tracked', agg.totalEvents.toLocaleString(), dailyCount + ' days'],
+  ];
+  for (const [label, value, sub] of items) {
+    const cell = el('div', 'stat-cell');
+    cell.appendChild(el('div', 'label', label));
+    cell.appendChild(el('div', 'value', value));
+    if (sub) cell.appendChild(el('div', 'sub', sub));
+    strip.appendChild(cell);
+  }
+}
+
+const AAVE_BORROW_APY = { wstETH: 0.03, EURe: 4.70, GNO: 3.56, USDCe: 2.68, WETH: 1.65, WXDAI: 3.79, GHO: 2.46 };
+const AAVE_SUPPLY_APY = { wstETH: 0.01, EURe: 3.47, sDAI: 0, GNO: 0.52, USDCe: 1.14, WETH: 0.82, WXDAI: 1.88, GHO: 0.89 };
+const SAVINGS_YIELD = { GNO: { rate: 8.5, product: 'Staked GNO' }, WXDAI: { rate: 4.0, product: 'DSR' }, USDCe: { rate: 4.0, product: 'DSR' }, WETH: { rate: 2.3, product: 'Staked ETH' }, GHO: { rate: 5.4, product: 'Savings GHO' } };
+
+function buildSpreadTable(markets, allMarkets) {
+  const noteEl = $('#spread-note');
+  const tableEl = $('#spread-table');
+  const thead = tableEl.querySelector('thead');
+  const tbody = tableEl.querySelector('tbody');
+  thead.replaceChildren();
+  tbody.replaceChildren();
+
+  noteEl.textContent = 'Comparing Aave borrow costs against available savings yields on Gnosis. Where the spread is positive, borrowers could deploy into a savings product and earn more than they pay in interest \u2014 yet borrow volumes remain low in most of these markets, suggesting this arbitrage is largely untapped.';
+
+  const headerRow = el('tr');
+  for (const h of ['Asset', 'Borrow APY', 'Savings Alt.', 'Yield', 'Spread', 'Borrows']) {
+    const th = el('th', null, h);
+    if (['Borrow APY', 'Yield', 'Spread', 'Borrows'].includes(h)) th.className = 'right';
+    headerRow.appendChild(th);
+  }
+  thead.appendChild(headerRow);
+
+  const NO_SPREAD = new Set(['wstETH', 'EURe']);
+  const rows = allMarkets
+    .filter(m => AAVE_BORROW_APY[m] != null)
+    .map(m => {
+      const borrowAPY = AAVE_BORROW_APY[m];
+      const savings = NO_SPREAD.has(m) ? null : SAVINGS_YIELD[m];
+      const spread = savings ? savings.rate - borrowAPY : null;
+      const borrowUSD = markets[m]?.borrow?.totalUSD || 0;
+      return { market: m, borrowAPY, savings, spread, borrowUSD, noSpread: NO_SPREAD.has(m) };
+    })
+    .sort((a, b) => {
+      if (a.noSpread !== b.noSpread) return a.noSpread ? 1 : -1;
+      if (a.noSpread && b.noSpread) return b.borrowUSD - a.borrowUSD;
+      return (b.spread ?? -999) - (a.spread ?? -999);
+    });
+
+  for (const r of rows) {
+    const tr = el('tr');
+    tr.appendChild(el('td', null, r.market));
+    const borrowTd = el('td', 'right mono');
+    borrowTd.textContent = r.borrowAPY.toFixed(2) + '%';
+    tr.appendChild(borrowTd);
+
+    if (r.noSpread) {
+      const emptyTd = el('td');
+      emptyTd.setAttribute('colspan', '4');
+      emptyTd.style.cssText = 'color:var(--text-muted);font-size:0.72rem';
+      emptyTd.textContent = 'No savings alternative';
+      tr.appendChild(emptyTd);
+    } else {
+      tr.appendChild(el('td', null, r.savings ? r.savings.product : '\u2014'));
+      const yieldTd = el('td', 'right mono');
+      yieldTd.textContent = r.savings ? r.savings.rate.toFixed(1) + '%' : '\u2014';
+      tr.appendChild(yieldTd);
+      const spreadTd = el('td', 'right mono');
+      if (r.spread != null) {
+        spreadTd.textContent = (r.spread > 0 ? '+' : '') + r.spread.toFixed(2) + '%';
+        spreadTd.className += r.spread > 0 ? ' spread-positive' : ' spread-negative';
+      } else {
+        spreadTd.textContent = '\u2014';
+      }
+      tr.appendChild(spreadTd);
+      const borrowValTd = el('td', 'right mono');
+      borrowValTd.textContent = fmtUSD(r.borrowUSD);
+      tr.appendChild(borrowValTd);
+    }
+    tbody.appendChild(tr);
+  }
+}
+
+function buildDaoCostTable(markets, allMarkets) {
+  const noteEl = $('#dao-cost-note');
+  const tableEl = $('#dao-cost-table');
+  const thead = tableEl.querySelector('thead');
+  const tbody = tableEl.querySelector('tbody');
+  thead.replaceChildren();
+  tbody.replaceChildren();
+
+  const headerRow = el('tr');
+  for (const h of ['Asset', 'DAO Supply', 'Supply APY', 'Alternative', 'Alt. Yield', 'Spread', 'Annual Cost']) {
+    const th = el('th', null, h);
+    if (['DAO Supply', 'Supply APY', 'Alt. Yield', 'Spread', 'Annual Cost'].includes(h)) th.className = 'right';
+    headerRow.appendChild(th);
+  }
+  thead.appendChild(headerRow);
+
+  const NO_ALT = new Set(['wstETH', 'EURe', 'sDAI']);
+  const EXCLUDE = new Set(['GNO']);
+  let totalCost = 0;
+  let totalDaoSupply = 0;
+
+  const rows = allMarkets
+    .filter(m => !EXCLUDE.has(m))
+    .map(m => {
+      const daoSupply = markets[m]?.supply?.categories?.gnosisDAO || 0;
+      const supplyAPY = AAVE_SUPPLY_APY[m] ?? 0;
+      const savings = NO_ALT.has(m) ? null : SAVINGS_YIELD[m];
+      const spread = savings ? savings.rate - supplyAPY : null;
+      const annualCost = spread && daoSupply > 0 ? (spread / 100) * daoSupply : 0;
+      return { market: m, daoSupply, supplyAPY, savings, spread, annualCost, noAlt: NO_ALT.has(m) };
+    })
+    .filter(r => r.daoSupply > 100)
+    .sort((a, b) => b.annualCost - a.annualCost);
+
+  for (const r of rows) {
+    totalCost += r.annualCost;
+    totalDaoSupply += r.daoSupply;
+    const tr = el('tr');
+    tr.appendChild(el('td', null, r.market));
+    const supTd = el('td', 'right mono');
+    supTd.textContent = fmtUSD(r.daoSupply);
+    tr.appendChild(supTd);
+    const apyTd = el('td', 'right mono');
+    apyTd.textContent = r.supplyAPY.toFixed(2) + '%';
+    tr.appendChild(apyTd);
+
+    if (r.noAlt) {
+      const emptyTd = el('td');
+      emptyTd.setAttribute('colspan', '4');
+      emptyTd.style.cssText = 'color:var(--text-muted);font-size:0.72rem';
+      emptyTd.textContent = r.market === 'wstETH' ? 'Already earning staking yield natively' : 'No savings alternative';
+      tr.appendChild(emptyTd);
+    } else {
+      tr.appendChild(el('td', null, r.savings ? r.savings.product : '\u2014'));
+      const yieldTd = el('td', 'right mono');
+      yieldTd.textContent = r.savings ? r.savings.rate.toFixed(1) + '%' : '\u2014';
+      tr.appendChild(yieldTd);
+      const spreadTd = el('td', 'right mono');
+      if (r.spread != null) {
+        spreadTd.textContent = (r.spread > 0 ? '+' : '') + r.spread.toFixed(2) + '%';
+        spreadTd.className += r.spread > 0 ? ' spread-positive' : ' spread-negative';
+      } else {
+        spreadTd.textContent = '\u2014';
+      }
+      tr.appendChild(spreadTd);
+      const costTd = el('td', 'right mono');
+      costTd.style.color = r.annualCost > 0 ? 'var(--coral)' : 'var(--text-dim)';
+      costTd.style.fontWeight = '600';
+      costTd.textContent = r.annualCost > 0 ? fmtUSD(r.annualCost) + '/yr' : '\u2014';
+      tr.appendChild(costTd);
+    }
+    tbody.appendChild(tr);
+  }
+
+  const totalRow = el('tr');
+  totalRow.style.borderTop = '2px solid var(--border)';
+  const totalLabel = el('td');
+  totalLabel.style.fontWeight = '600';
+  totalLabel.textContent = 'Total';
+  totalRow.appendChild(totalLabel);
+  const totalSupTd = el('td', 'right mono');
+  totalSupTd.style.fontWeight = '600';
+  totalSupTd.textContent = fmtUSD(totalDaoSupply);
+  totalRow.appendChild(totalSupTd);
+  totalRow.appendChild(el('td'));
+  totalRow.appendChild(el('td'));
+  totalRow.appendChild(el('td'));
+  totalRow.appendChild(el('td'));
+  const totalCostTd = el('td', 'right mono');
+  totalCostTd.style.cssText = 'color:var(--coral);font-weight:700;font-size:0.85rem';
+  totalCostTd.textContent = fmtUSD(totalCost) + '/yr';
+  totalRow.appendChild(totalCostTd);
+  tbody.appendChild(totalRow);
+
+  noteEl.textContent = 'GnosisDAO supplies ' + fmtUSD(totalDaoSupply) + ' across Aave Gnosis markets, earning supply APY. For most assets, higher-yielding alternatives exist. The annual opportunity cost of earning supply rates instead of deploying into these alternatives is approximately ' + fmtUSD(totalCost) + '.';
+}
+
+function buildHeroCallout(markets, allMarkets, agg) {
+  const hero = $('#hero-callout');
+  hero.replaceChildren();
+  let whaleUSD = 0, whaleCount = 0, totalBorrow = agg.totalDebtUSD;
+  let top1USD = 0, top1Addr = '', top1Market = '';
+  for (const m of allMarkets) {
+    const split = computeSizeSplit(markets[m], 'borrow');
+    whaleUSD += split.whaleUSD;
+    whaleCount += split.whaleCount;
+    const top = markets[m].borrow.top10[0];
+    if (top && top.usd > top1USD) { top1USD = top.usd; top1Addr = top.holder; top1Market = m; }
+  }
+  const finding = el('div', 'finding');
+  finding.append(
+    document.createTextNode('Aave Gnosis borrowing is dominated by whales. '),
+    Object.assign(el('span', 'hl'), { textContent: whaleCount + ' wallets' }),
+    document.createTextNode(' (>$100K) control '),
+    Object.assign(el('span', 'hl'), { textContent: fmtPct(whaleUSD / totalBorrow * 100) }),
+    document.createTextNode(' of all borrows.')
+  );
+  hero.appendChild(finding);
+  const detail = el('div', 'detail');
+  const addrLink = el('a', 'addr');
+  addrLink.href = 'https://gnosisscan.io/address/' + top1Addr;
+  addrLink.target = '_blank';
+  addrLink.textContent = shortAddr(top1Addr);
+  addrLink.style.color = 'var(--text)';
+  detail.append(
+    document.createTextNode('The single largest borrower ('),
+    addrLink,
+    document.createTextNode(') holds '),
+    Object.assign(el('span', 'hl'), { textContent: fmtUSD(top1USD) }),
+    document.createTextNode(' in ' + top1Market + ' debt \u2014 '),
+    Object.assign(el('span', 'hl'), { textContent: fmtPct(top1USD / totalBorrow * 100) }),
+    document.createTextNode(' of total borrows. Despite positive spreads between savings yields and borrow rates on several assets, most borrowing is concentrated in a few large positions rather than widespread arbitrage.')
+  );
+  hero.appendChild(detail);
+
+  return { whaleCount, whaleUSD };
+}
+
+function buildWhaleDualBar(markets, allMarkets, agg) {
+  const container = $('#whale-dual-bar');
+  const noteEl = $('#whale-note');
+  container.replaceChildren();
+
+  const bucketLabels = ['<$1K', '$1-10K', '$10-50K', '$50-100K', '$100K-500K', '$500K-1M', '>$1M'];
+  const aggBuckets = bucketLabels.map(l => ({ label: l, count: 0, totalUSD: 0 }));
+  for (const m of allMarkets) {
+    const buckets = markets[m].borrow?.buckets || [];
+    for (const b of buckets) {
+      const idx = bucketLabels.indexOf(b.label);
+      if (idx >= 0) { aggBuckets[idx].count += b.count; aggBuckets[idx].totalUSD += b.totalUSD; }
+    }
+  }
+  const totalBorrow = agg.totalDebtUSD;
+  const totalCount = aggBuckets.reduce((s, b) => s + b.count, 0);
+
+  const retail = { count: 0, usd: 0 }, mid = { count: 0, usd: 0 }, whale = { count: 0, usd: 0 };
+  for (const b of aggBuckets) {
+    const isW = ['$100K-500K', '$500K-1M', '>$1M'].includes(b.label);
+    const isM = ['$10-50K', '$50-100K'].includes(b.label);
+    (isW ? whale : isM ? mid : retail).count += b.count;
+    (isW ? whale : isM ? mid : retail).usd += b.totalUSD;
+  }
+
+  noteEl.textContent = totalCount.toLocaleString() + ' borrowers hold ' + fmtUSD(totalBorrow) + ' in debt. The composition of wallets vs value tells very different stories.';
+
+  const barWrap = el('div', 'comp-bar-wrap');
+  function addStackedRow(label, total, segments) {
+    const row = el('div', 'comp-bar-row');
+    const lbl = el('div', 'bar-label', label);
+    row.appendChild(lbl);
+    const track = el('div', 'bar-track');
+    for (const [cls, value, tierLabel, innerLabel] of segments) {
+      const pct = value / total * 100;
+      if (pct < 0.3) continue;
+      const fill = el('div', 'bar-fill ' + cls);
+      fill.style.width = pct + '%';
+      fill.title = tierLabel + ': ' + fmtPct(pct);
+      if (innerLabel && pct > 6) {
+        fill.style.position = 'relative';
+        fill.style.display = 'flex';
+        fill.style.alignItems = 'center';
+        fill.style.justifyContent = 'center';
+        const txt = el('span');
+        txt.style.cssText = 'font-size:0.68rem;font-weight:600;color:#fff;white-space:nowrap;text-shadow:0 1px 3px rgba(0,0,0,0.6)';
+        txt.textContent = innerLabel;
+        fill.appendChild(txt);
+      }
+      track.appendChild(fill);
+    }
+    row.appendChild(track);
+    barWrap.appendChild(row);
+  }
+  addStackedRow('Wallets', totalCount, [
+    ['fill-retail', retail.count, 'Retail (<$10K)', retail.count.toLocaleString()],
+    ['fill-mid', mid.count, 'Mid ($10K\u2013$100K)', mid.count.toLocaleString()],
+    ['fill-whale', whale.count, 'Whale (>$100K)', whale.count.toLocaleString()],
+  ]);
+  addStackedRow('Value', totalBorrow, [
+    ['fill-retail', retail.usd, 'Retail (<$10K)', fmtUSD(retail.usd)],
+    ['fill-mid', mid.usd, 'Mid ($10K\u2013$100K)', fmtUSD(mid.usd)],
+    ['fill-whale', whale.usd, 'Whale (>$100K)', fmtUSD(whale.usd)],
+  ]);
+  container.appendChild(barWrap);
+
+  const anno = el('div', 'legend');
+  anno.style.marginTop = '0.75rem';
+  function addAnno(color, label, pctCount, pctUsd) {
+    const item = el('div', 'legend-item');
+    const dot = el('div', 'legend-dot');
+    dot.style.background = color;
+    item.appendChild(dot);
+    item.appendChild(document.createTextNode(label + ' \u2014 ' + fmtPct(pctCount) + ' of wallets, ' + fmtPct(pctUsd) + ' of value'));
+    anno.appendChild(item);
+  }
+  addAnno('var(--green)', 'Retail (<$10K)', retail.count / totalCount * 100, retail.usd / totalBorrow * 100);
+  addAnno('var(--yellow)', 'Mid ($10K\u2013$100K)', mid.count / totalCount * 100, mid.usd / totalBorrow * 100);
+  addAnno('var(--coral)', 'Whale (>$100K)', whale.count / totalCount * 100, whale.usd / totalBorrow * 100);
+  container.appendChild(anno);
+}
+
+function buildCompBars(containerId, legendId, markets, allMarkets, side) {
+  const container = $(containerId);
+  const legendEl = $(legendId);
+  container.replaceChildren();
+  legendEl.replaceChildren();
+  const sorted = allMarkets
+    .map(m => ({ name: m, split: computeSizeSplit(markets[m], side), total: markets[m][side]?.totalUSD || 0 }))
+    .sort((a, b) => b.total - a.total)
+    .filter(x => x.total > 1);
+  for (const item of sorted) {
+    const row = el('div', 'comp-bar-row');
+    row.appendChild(el('div', 'bar-label', item.name));
+    const track = el('div', 'bar-track');
+    const segments = side === 'borrow'
+      ? [['fill-whale', item.split.whaleUSD], ['fill-mid', item.split.midUSD], ['fill-retail', item.split.retailUSD]]
+      : [['fill-dao', item.split.daoUSD], ['fill-protocol', item.split.protocolUSD], ['fill-whale', item.split.whaleUSD], ['fill-mid', item.split.midUSD], ['fill-retail', item.split.retailUSD]];
+    for (const [cls, val] of segments) {
+      const fill = el('div', 'bar-fill ' + cls);
+      fill.style.width = (val / item.total * 100) + '%';
+      track.appendChild(fill);
+    }
+    row.appendChild(track);
+    row.appendChild(el('div', 'bar-val', fmtUSD(item.total)));
+    container.appendChild(row);
+  }
+  const legendItems = side === 'borrow'
+    ? [['var(--coral)', 'Whale (>$100K)'], ['var(--yellow)', 'Mid ($10K\u2013$100K)'], ['var(--green)', 'Retail (<$10K)']]
+    : [['var(--blue)', 'GnosisDAO'], ['var(--purple)', 'Protocol'], ['var(--coral)', 'Whale (>$100K)'], ['var(--yellow)', 'Mid ($10K\u2013$100K)'], ['var(--green)', 'Retail (<$10K)']];
+  for (const [color, label] of legendItems) {
+    const item = el('div', 'legend-item');
+    const dot = el('div', 'legend-dot');
+    dot.style.background = color;
+    item.appendChild(dot);
+    item.appendChild(document.createTextNode(label));
+    legendEl.appendChild(item);
+  }
+}
+
+function buildEureCallout(markets) {
+  const container = $('#eure-callout');
+  container.replaceChildren();
+  const eure = markets['EURe'];
+  if (!eure) return;
+  const util = eure.utilization;
+  const callout = el('div', 'info-callout');
+  const finding = el('div', 'finding');
+  finding.textContent = 'EURe utilization is ' + fmtPct(util) + ' \u2014 the highest in the deployment.';
+  callout.appendChild(finding);
+  const detail = el('div', 'detail');
+  detail.textContent = 'High utilization means suppliers earn better rates but face withdrawal constraints. This market is close to its borrow cap.';
+  callout.appendChild(detail);
+  container.appendChild(callout);
+}
+
+function buildTopTable(tableId, btnId, markets, allMarkets, side) {
+  const tableEl = $(tableId);
+  const thead = tableEl.querySelector('thead');
+  const tbody = tableEl.querySelector('tbody');
+  thead.replaceChildren();
+  tbody.replaceChildren();
+  const holders = [];
+  for (const m of allMarkets) {
+    const top = markets[m][side]?.top10 || [];
+    for (const h of top) holders.push({ ...h, market: m });
+  }
+  holders.sort((a, b) => b.usd - a.usd);
+  const headerRow = el('tr');
+  for (const h of ['#', 'Address', 'Market', 'Value', '% Mkt', 'Size']) {
+    const th = el('th', null, h);
+    if (['Value', '% Mkt'].includes(h)) th.className = 'right';
+    headerRow.appendChild(th);
+  }
+  thead.appendChild(headerRow);
+  const INITIAL = 5;
+  holders.forEach((h, i) => {
+    const tr = el('tr');
+    if (i >= INITIAL) tr.style.display = 'none';
+    tr.dataset.extra = i >= INITIAL ? '1' : '';
+    const num = el('td', null, String(i + 1));
+    num.style.color = 'var(--text-muted)';
+    tr.appendChild(num);
+    const addrTd = el('td');
+    const addrLink = el('a', 'addr');
+    addrLink.href = 'https://gnosisscan.io/address/' + h.holder;
+    addrLink.target = '_blank';
+    addrLink.textContent = shortAddr(h.holder);
+    addrTd.appendChild(addrLink);
+    tr.appendChild(addrTd);
+    tr.appendChild(el('td', null, h.market));
+    const valTd = el('td', 'right mono');
+    valTd.textContent = fmtUSD(h.usd);
+    tr.appendChild(valTd);
+    const pctTd = el('td', 'right mono');
+    pctTd.textContent = fmtPct(h.pct);
+    tr.appendChild(pctTd);
+    const typeTd = el('td');
+    typeTd.appendChild(tagEl(h.type === 'gnosisDAO' ? 'gnosisDAO' : h.type === 'protocol' ? 'protocol' : sizeTag(h.usd)));
+    tr.appendChild(typeTd);
+    tbody.appendChild(tr);
+  });
+  const btn = $(btnId);
+  if (holders.length <= INITIAL) { btn.style.display = 'none'; return; }
+  let expanded = false;
+  btn.textContent = 'Show all ' + holders.length + ' positions';
+  btn.onclick = () => {
+    expanded = !expanded;
+    $$('tr[data-extra="1"]', tbody).forEach(tr => tr.style.display = expanded ? '' : 'none');
+    btn.textContent = expanded ? 'Show less' : 'Show all ' + holders.length + ' positions';
+  };
+}
+
+function buildWithoutWhales(markets, allMarkets) {
+  const metricsEl = $('#no-whale-metrics');
+  const gridEl = $('#no-whale-markets');
+  metricsEl.replaceChildren();
+  gridEl.replaceChildren();
+  let retailSupply = 0, retailBorrow = 0, totalSup = 0, totalBor = 0;
+  const perMarket = [];
+  for (const m of allMarkets) {
+    const ss = computeSizeSplit(markets[m], 'supply');
+    const bs = computeSizeSplit(markets[m], 'borrow');
+    retailSupply += ss.retailUSD;
+    retailBorrow += bs.retailUSD;
+    totalSup += ss.totalUSD;
+    totalBor += bs.totalUSD;
+    perMarket.push({ name: m, supply: ss.retailUSD, borrow: bs.retailUSD, supCount: ss.retailCount, borCount: bs.retailCount });
+  }
+  const metrics = [
+    ['Supply (<$10K)', fmtUSD(retailSupply), fmtPct(retailSupply / Math.max(totalSup, 1) * 100) + ' of total'],
+    ['Borrows (<$10K)', fmtUSD(retailBorrow), fmtPct(retailBorrow / Math.max(totalBor, 1) * 100) + ' of total'],
+    ['Retail Utilization', retailSupply > 0 ? fmtPct(retailBorrow / retailSupply * 100) : '\u2014', ''],
+  ];
+  for (const [label, value, sub] of metrics) {
+    const box = el('div', 'metric-box');
+    box.appendChild(el('div', 'm-label', label));
+    box.appendChild(el('div', 'm-value', value));
+    if (sub) box.appendChild(el('div', 'm-sub', sub));
+    metricsEl.appendChild(box);
+  }
+  for (const pm of perMarket.sort((a, b) => b.supply - a.supply)) {
+    if (pm.supply < 1 && pm.borrow < 1) continue;
+    const card = el('div', 'market-card');
+    card.appendChild(el('h3', null, pm.name));
+    for (const [label, value] of [['Supply', fmtUSD(pm.supply)], ['Suppliers', String(pm.supCount)], ['Borrows', fmtUSD(pm.borrow)], ['Borrowers', String(pm.borCount)], ['Utilization', pm.supply > 0 ? fmtPct(pm.borrow / pm.supply * 100) : '\u2014']]) {
+      const row = el('div', 'market-stat');
+      row.appendChild(el('span', 's-label', label));
+      row.appendChild(el('span', 's-val', value));
+      card.appendChild(row);
+    }
+    gridEl.appendChild(card);
+  }
+}
+
+function buildMarketCards(markets, allMarkets) {
+  const container = $('#market-grid');
+  container.replaceChildren();
+  for (const { name, d } of allMarkets.map(m => ({ name: m, d: markets[m] })).sort((a, b) => (b.d?.supply?.totalUSD || 0) - (a.d?.supply?.totalUSD || 0))) {
+    if (!d) continue;
+    const card = el('div', 'market-card');
+    const h3 = el('h3');
+    h3.appendChild(document.createTextNode(name));
+    h3.appendChild(el('span', 'price', '$' + (d.price < 10 ? d.price.toFixed(4) : d.price.toFixed(2))));
+    card.appendChild(h3);
+    const gini = d.borrow.holderCount > 0 ? d.borrow.concentration.gini : null;
+    const giniStr = gini != null ? giniLabel(gini) + ' (' + gini.toFixed(3) + ')' : '\u2014';
+    for (const [label, value] of [
+      ['Supply', fmtUSD(d.supply.totalUSD)],
+      ['Suppliers', d.supply.holderCount.toLocaleString()],
+      ['Borrows', fmtUSD(d.borrow.totalUSD)],
+      ['Borrowers', d.borrow.holderCount.toLocaleString()],
+      ['Utilization', fmtPct(d.utilization)],
+      ['Top-1 Borrow %', d.borrow.concentration.top1 > 0 ? fmtPct(d.borrow.concentration.top1) : '\u2014'],
+      ['Top-5 Borrow %', d.borrow.concentration.top5 > 0 ? fmtPct(d.borrow.concentration.top5) : '\u2014'],
+      ['Concentration', giniStr],
+    ]) {
+      const row = el('div', 'market-stat');
+      row.appendChild(el('span', 's-label', label));
+      row.appendChild(el('span', 's-val', value));
+      card.appendChild(row);
+    }
+    container.appendChild(card);
+  }
+}
+
+function drawHistoryChart(dailyActivity) {
+  const canvas = $('#history-chart');
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = 280 * dpr;
+  ctx.scale(dpr, dpr);
+  const W = rect.width, H = 280;
+  const pad = { top: 30, right: 20, bottom: 40, left: 50 };
+  const plotW = W - pad.left - pad.right, plotH = H - pad.top - pad.bottom;
+
+  const supplyData = dailyActivity.map(d => d.supply);
+  const debtData = dailyActivity.map(d => d.debt);
+
+  function ma7(arr) {
+    return arr.map((_, i) => {
+      const slice = arr.slice(Math.max(0, i - 6), i + 1);
+      return slice.reduce((a, b) => a + b, 0) / slice.length;
+    });
+  }
+
+  const supplyMA = ma7(supplyData);
+  const debtMA = ma7(debtData);
+  const maxVal = Math.max(...supplyMA, ...debtMA, 1);
+  const xStep = plotW / (supplyData.length - 1 || 1);
+
+  // Grid lines
+  ctx.strokeStyle = '#1a1a1e';
+  ctx.lineWidth = 1;
+  for (let i = 0; i <= 4; i++) {
+    const y = pad.top + plotH * (1 - i / 4);
+    ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(W - pad.right, y); ctx.stroke();
+    ctx.fillStyle = '#6a6a70';
+    ctx.font = '10px DM Mono, monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText(Math.round(maxVal * i / 4).toLocaleString(), pad.left - 8, y + 3);
+  }
+
+  // Draw line + fill
+  function drawLine(ma, strokeColor, fillColor) {
+    ctx.strokeStyle = strokeColor;
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    for (let i = 0; i < ma.length; i++) {
+      const x = pad.left + i * xStep, y = pad.top + plotH * (1 - ma[i] / maxVal);
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+    ctx.lineTo(pad.left + (ma.length - 1) * xStep, H - pad.bottom);
+    ctx.lineTo(pad.left, H - pad.bottom);
+    ctx.closePath();
+    ctx.fillStyle = fillColor;
+    ctx.fill();
+  }
+
+  drawLine(supplyMA, '#60a5fa', 'rgba(96,165,250,0.06)');
+  drawLine(debtMA, '#FF8566', 'rgba(255,133,102,0.06)');
+
+  // X-axis labels (quarterly)
+  ctx.fillStyle = '#6a6a70';
+  ctx.font = '10px DM Sans, sans-serif';
+  ctx.textAlign = 'center';
+  let lastQ = '';
+  for (let i = 0; i < dailyActivity.length; i++) {
+    const d = dailyActivity[i].date;
+    const month = parseInt(d.slice(5, 7));
+    const qLabel = d.slice(0, 4) + '-Q' + Math.ceil(month / 3);
+    if (qLabel !== lastQ) {
+      lastQ = qLabel;
+      ctx.fillText(d.slice(0, 7), pad.left + i * xStep, H - pad.bottom + 18);
+    }
+  }
+
+  // Inline legend
+  ctx.font = '11px DM Sans, sans-serif';
+  ctx.textAlign = 'left';
+  const legendX = pad.left;
+  const legendY = pad.top - 12;
+
+  ctx.fillStyle = '#60a5fa';
+  ctx.fillRect(legendX, legendY - 7, 12, 3);
+  ctx.fillStyle = '#8a8a90';
+  ctx.fillText('Supply', legendX + 16, legendY);
+
+  const supplyTextW = ctx.measureText('Supply').width;
+  ctx.fillStyle = '#FF8566';
+  ctx.fillRect(legendX + 16 + supplyTextW + 12, legendY - 7, 12, 3);
+  ctx.fillStyle = '#8a8a90';
+  ctx.fillText('Borrow', legendX + 16 + supplyTextW + 28, legendY);
+
+  const borrowTextW = ctx.measureText('Borrow').width;
+  ctx.fillStyle = '#6a6a70';
+  ctx.fillText('(7d MA)', legendX + 16 + supplyTextW + 28 + borrowTextW + 6, legendY);
+}
+
+async function main() {
+  let rawData;
+  try {
+    const res = await fetch('aave-gnosis-data.json');
+    rawData = await res.json();
+  } catch (e) {
+    document.getElementById('loading').textContent = 'Failed to load aave-gnosis-data.json';
+    return;
+  }
+  const { aggregate, markets, dailyActivity } = rawData;
+  const allMarkets = Object.keys(markets);
+  const genDate = new Date(rawData.generatedAt);
+  const dateStr = genDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  $('#gen-date').textContent = 'Snapshot as of ' + dateStr;
+  $('#footer-date').textContent = dateStr;
+
+  buildSummaryStrip(aggregate, dailyActivity.length);
+  const whaleStats = buildHeroCallout(markets, allMarkets, aggregate);
+
+  // Dynamic whale heading
+  $('#whale-heading').textContent = whaleStats.whaleCount + ' Wallets Control ' + fmtPct(whaleStats.whaleUSD / aggregate.totalDebtUSD * 100) + ' of Borrows';
+
+  buildWhaleDualBar(markets, allMarkets, aggregate);
+  buildCompBars('#borrow-comp-bars', '#borrow-legend', markets, allMarkets, 'borrow');
+  buildEureCallout(markets);
+  buildTopTable('#borrow-table', '#borrow-more-btn', markets, allMarkets, 'borrow');
+  buildWithoutWhales(markets, allMarkets);
+  buildSpreadTable(markets, allMarkets);
+  buildDaoCostTable(markets, allMarkets);
+  buildCompBars('#supply-comp-bars', '#supply-legend', markets, allMarkets, 'supply');
+  buildTopTable('#supply-table', '#supply-more-btn', markets, allMarkets, 'supply');
+  buildMarketCards(markets, allMarkets);
+
+  // Per-market detail toggle
+  const marketToggle = $('#market-toggle-btn');
+  const marketGrid = $('#market-grid');
+  let marketExpanded = false;
+  marketToggle.onclick = () => {
+    marketExpanded = !marketExpanded;
+    marketGrid.style.display = marketExpanded ? '' : 'none';
+    marketToggle.textContent = marketExpanded ? 'Hide per-market detail' : 'Show per-market detail';
+  };
+
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+  window._dailyActivity = dailyActivity;
+  drawHistoryChart(dailyActivity);
+}
+
+main().then(() => {
+  window.addEventListener('resize', () => {
+    if (window._dailyActivity) drawHistoryChart(window._dailyActivity);
+  });
+});
+</script>
+</body>
+</html>

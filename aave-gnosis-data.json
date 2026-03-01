@@ -1,0 +1,6061 @@
+{
+  "generatedAt": "2026-03-01T00:37:26.342Z",
+  "prices": {
+    "WXDAI": 1,
+    "WETH": 1959.26,
+    "GNO": 126.63,
+    "wstETH": 2404.17,
+    "sDAI": 1.17,
+    "USDCe": 1,
+    "EURe": 1.05,
+    "GHO": 1
+  },
+  "aggregate": {
+    "totalSupplyUSD": 95103144.77831797,
+    "totalDebtUSD": 27079174.122917082,
+    "utilization": 28.473479174676786,
+    "uniqueSuppliers": 32360,
+    "uniqueBorrowers": 499,
+    "totalEvents": 1870710
+  },
+  "markets": {
+    "wstETH": {
+      "price": 2404.17,
+      "supply": {
+        "totalUSD": 28395510.63010827,
+        "holderCount": 267,
+        "top10": [
+          {
+            "holder": "0xFe13988736d95D052C2E45e5b4E1Ef2e2750b7F4",
+            "usd": 15364960,
+            "pct": 54.110526476744226,
+            "type": "organic"
+          },
+          {
+            "holder": "0x773CDA0CADe2A3d86E6D4e30699d40bB95174ff2",
+            "usd": 1824283,
+            "pct": 6.424546168424803,
+            "type": "protocol"
+          },
+          {
+            "holder": "0x9065A0F9545817d18b58436771b4d87Bda8f008B",
+            "usd": 1611322,
+            "pct": 5.674565782583929,
+            "type": "gnosisDAO"
+          },
+          {
+            "holder": "0x2735A560ca4a5ec14776a2cEF36280f17a980CD2",
+            "usd": 1542126,
+            "pct": 5.430881164366828,
+            "type": "organic"
+          },
+          {
+            "holder": "0xBc2bebd4E1A1Af5C53Eb25d19448AB97a51403f0",
+            "usd": 1055334,
+            "pct": 3.7165521011915863,
+            "type": "organic"
+          },
+          {
+            "holder": "0x20b5cCe57F420C275621Ed3B7E78E8F2d6F21717",
+            "usd": 606386,
+            "pct": 2.1354987038710527,
+            "type": "organic"
+          },
+          {
+            "holder": "0xc11cc223A3ffc89044Cfe0D5340E61BF6e579467",
+            "usd": 579925,
+            "pct": 2.0423127686025806,
+            "type": "organic"
+          },
+          {
+            "holder": "0xf26eca531C8B5F6AD7e2C2cdF17cE93005Bae875",
+            "usd": 440912,
+            "pct": 1.552751607568069,
+            "type": "organic"
+          },
+          {
+            "holder": "0x1BB6CF41f46cc3DF94C388C5a1401Ba314AC9b6D",
+            "usd": 420730,
+            "pct": 1.4816769998886434,
+            "type": "organic"
+          },
+          {
+            "holder": "0xd43412ad530d5Ecf70767ed16850ae68EADd3E8f",
+            "usd": 360626,
+            "pct": 1.2700096656665965,
+            "type": "organic"
+          }
+        ],
+        "concentration": {
+          "top1": 54.110526476744226,
+          "top5": 75.35707169331137,
+          "top10": 83.83932143890831,
+          "hhi": 0.30663024257580995,
+          "gini": 0.9486120513759022
+        },
+        "categories": {
+          "gnosisDAO": 1611321.930006106,
+          "protocol": 1831039.2695128608,
+          "organic": 24953149.430589303
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 114,
+            "totalUSD": 19022.22701694089
+          },
+          {
+            "label": "$1-10K",
+            "count": 72,
+            "totalUSD": 299182.6868524788
+          },
+          {
+            "label": "$10-50K",
+            "count": 44,
+            "totalUSD": 1016295.6285332838
+          },
+          {
+            "label": "$50-100K",
+            "count": 14,
+            "totalUSD": 993087.164292007
+          },
+          {
+            "label": "$100K-500K",
+            "count": 16,
+            "totalUSD": 3483586.719428877
+          },
+          {
+            "label": "$500K-1M",
+            "count": 2,
+            "totalUSD": 1186310.9007721334
+          },
+          {
+            "label": ">$1M",
+            "count": 5,
+            "totalUSD": 21398025.303212542
+          }
+        ]
+      },
+      "borrow": {
+        "totalUSD": 47055.15181802469,
+        "holderCount": 11,
+        "top10": [
+          {
+            "holder": "0xB70D29deCca758BB72Cd2967a989782F3acAd3e6",
+            "usd": 39672,
+            "pct": 84.30938582459552,
+            "type": "organic"
+          },
+          {
+            "holder": "0x0551dD7e93E768044e2DD7DB56A1DE659e623702",
+            "usd": 3606,
+            "pct": 7.664152255820859,
+            "type": "organic"
+          },
+          {
+            "holder": "0xCbcDCA647cFda9283992193604F8718A910b42fc",
+            "usd": 1445,
+            "pct": 3.0698731708428366,
+            "type": "organic"
+          },
+          {
+            "holder": "0xFDd882b8d75e32Aac06EDC0fE577eDD8039bcd8C",
+            "usd": 1195,
+            "pct": 2.539468901884735,
+            "type": "organic"
+          },
+          {
+            "holder": "0xe2343C7D75A1830599876B84Accf34Dea297DB9e",
+            "usd": 489,
+            "pct": 1.0392240262921233,
+            "type": "organic"
+          },
+          {
+            "holder": "0xb7E28E5bc7E256a7a29bbdBCB558a8dc297Ca8d7",
+            "usd": 240,
+            "pct": 0.5109259894214329,
+            "type": "organic"
+          },
+          {
+            "holder": "0xe5f43bA510d3ea0D7288eC9f10fCE02a65eFf4f7",
+            "usd": 179,
+            "pct": 0.38031850993213995,
+            "type": "organic"
+          },
+          {
+            "holder": "0xf6Db7350c05f806F3Ff87Fd364C3fF995C900bBd",
+            "usd": 144,
+            "pct": 0.3065555936528597,
+            "type": "organic"
+          },
+          {
+            "holder": "0x4282341588F94c158bFAA40AE2C9F3ABfdAc647f",
+            "usd": 36,
+            "pct": 0.07663889841321493,
+            "type": "organic"
+          },
+          {
+            "holder": "0x293cFCbc9aAA6aFD97C25806aE6a526D3Ce2C93a",
+            "usd": 35,
+            "pct": 0.07435268603195469,
+            "type": "organic"
+          }
+        ],
+        "concentration": {
+          "top1": 84.30938582459552,
+          "top5": 98.62210417943608,
+          "top10": 99.97089585688768,
+          "hhi": 0.7184276690847915,
+          "gini": 0.8470273484303353
+        },
+        "categories": {
+          "gnosisDAO": 0,
+          "protocol": 0,
+          "organic": 47055.15181802469
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 7,
+            "totalUSD": 1137.3794135617056
+          },
+          {
+            "label": "$1-10K",
+            "count": 3,
+            "totalUSD": 6245.862907855361
+          },
+          {
+            "label": "$10-50K",
+            "count": 1,
+            "totalUSD": 39671.909496607615
+          },
+          {
+            "label": "$50-100K",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": "$100K-500K",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": "$500K-1M",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": ">$1M",
+            "count": 0,
+            "totalUSD": 0
+          }
+        ]
+      },
+      "utilization": 0.16571334965933407
+    },
+    "EURe": {
+      "price": 1.05,
+      "supply": {
+        "totalUSD": 18933730.037069537,
+        "holderCount": 2322,
+        "top10": [
+          {
+            "holder": "0x252152A38b9A8D16f08B78574664F7D3f32e3De1",
+            "usd": 2863263,
+            "pct": 15.122552652632507,
+            "type": "organic"
+          },
+          {
+            "holder": "0x86604a65039B79fEB62A32e7633cfC7e72f712bE",
+            "usd": 1414746,
+            "pct": 7.472092104780942,
+            "type": "organic"
+          },
+          {
+            "holder": "0xFdF06eF1f2EE9482A1fF288043D5A1297c35797b",
+            "usd": 1000574,
+            "pct": 5.284609079514579,
+            "type": "organic"
+          },
+          {
+            "holder": "0xA648308c384bEbEc3B618bFF0A8e33b41f6F0659",
+            "usd": 651034,
+            "pct": 3.4384868971424045,
+            "type": "organic"
+          },
+          {
+            "holder": "0x616dE58c011F8736fa20c7Ae5352F7f6FB9F0669",
+            "usd": 576436,
+            "pct": 3.044494840290959,
+            "type": "organic"
+          },
+          {
+            "holder": "0xe4863e797277dA2781e2681de045FC52716A6398",
+            "usd": 507110,
+            "pct": 2.6783415860533495,
+            "type": "organic"
+          },
+          {
+            "holder": "0x586AD5760a2fe5847c58deEc2933e11B5f595dBF",
+            "usd": 413997,
+            "pct": 2.1865556642725767,
+            "type": "organic"
+          },
+          {
+            "holder": "0xA52F881909A277FbEE1C36Dbd8f07a006E3ee4Ab",
+            "usd": 274509,
+            "pct": 1.4498409076006982,
+            "type": "organic"
+          },
+          {
+            "holder": "0xB2e27DfE452E6C98926aBb0477F86E0656999a74",
+            "usd": 250682,
+            "pct": 1.323995383126471,
+            "type": "organic"
+          },
+          {
+            "holder": "0x4688Cb193381A47DE9fC94c9dc16f6F9Ab83c07F",
+            "usd": 211843,
+            "pct": 1.118868022458814,
+            "type": "organic"
+          }
+        ],
+        "concentration": {
+          "top1": 15.122552652632507,
+          "top5": 34.362235574361385,
+          "top10": 43.1198371378733,
+          "hhi": 0.03689164377084864,
+          "gini": 0.9281307388694229
+        },
+        "categories": {
+          "gnosisDAO": 0,
+          "protocol": 44103.69604489498,
+          "organic": 18889626.341024645
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 1559,
+            "totalUSD": 205944.59161499215
+          },
+          {
+            "label": "$1-10K",
+            "count": 537,
+            "totalUSD": 1911082.2768494673
+          },
+          {
+            "label": "$10-50K",
+            "count": 161,
+            "totalUSD": 3536125.678582852
+          },
+          {
+            "label": "$50-100K",
+            "count": 30,
+            "totalUSD": 1947646.0451675912
+          },
+          {
+            "label": "$100K-500K",
+            "count": 29,
+            "totalUSD": 4319768.561129302
+          },
+          {
+            "label": "$500K-1M",
+            "count": 3,
+            "totalUSD": 1734580.225892061
+          },
+          {
+            "label": ">$1M",
+            "count": 3,
+            "totalUSD": 5278582.657833303
+          }
+        ]
+      },
+      "borrow": {
+        "totalUSD": 15640924.846627317,
+        "holderCount": 228,
+        "top10": [
+          {
+            "holder": "0xFe13988736d95D052C2E45e5b4E1Ef2e2750b7F4",
+            "usd": 9562859,
+            "pct": 61.13998467071108,
+            "type": "organic"
+          },
+          {
+            "holder": "0x562236C0D4FD95E26c53aC56b7d118E420ca1716",
+            "usd": 1534499,
+            "pct": 9.81079287637384,
+            "type": "organic"
+          },
+          {
+            "holder": "0x750e4d5efbeaE1C8C2A1BaCfe93A75aB3989e380",
+            "usd": 534225,
+            "pct": 3.4155579566396934,
+            "type": "organic"
+          },
+          {
+            "holder": "0x58A24Fa9AE8847CBCf245Dd2eF7FceF205927af1",
+            "usd": 283553,
+            "pct": 1.812891961806292,
+            "type": "organic"
+          },
+          {
+            "holder": "0x55Ac902cb75cC15288D473ed8E3E185a75b3f330",
+            "usd": 245761,
+            "pct": 1.571268817629477,
+            "type": "organic"
+          },
+          {
+            "holder": "0xBc2bebd4E1A1Af5C53Eb25d19448AB97a51403f0",
+            "usd": 243286,
+            "pct": 1.5554481109663505,
+            "type": "organic"
+          },
+          {
+            "holder": "0xac5E7a21855222E7aA894DFb069b7F061c7Fd61E",
+            "usd": 229718,
+            "pct": 1.468696931703782,
+            "type": "organic"
+          },
+          {
+            "holder": "0x8E6E1f7C33Ca82e430Fb2B131D40b32B9A6cB005",
+            "usd": 222531,
+            "pct": 1.4227504568193807,
+            "type": "organic"
+          },
+          {
+            "holder": "0xa8d3b89fA7FE3f118c169b9D32a939C4B9D30216",
+            "usd": 183750,
+            "pct": 1.1748026526680893,
+            "type": "organic"
+          },
+          {
+            "holder": "0x3c311D8Efb34ceC6A6Af5133F3b3fcD4B522DDe4",
+            "usd": 174166,
+            "pct": 1.1135287555852211,
+            "type": "organic"
+          }
+        ],
+        "concentration": {
+          "top1": 61.13998467071108,
+          "top5": 77.75049628316039,
+          "top10": 84.48572319090322,
+          "hhi": 0.3866312678789665,
+          "gini": 0.9372381045998613
+        },
+        "categories": {
+          "gnosisDAO": 0,
+          "protocol": 0,
+          "organic": 15640924.846627317
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 68,
+            "totalUSD": 20193.079899966382
+          },
+          {
+            "label": "$1-10K",
+            "count": 97,
+            "totalUSD": 406507.014666327
+          },
+          {
+            "label": "$10-50K",
+            "count": 40,
+            "totalUSD": 939405.6435686783
+          },
+          {
+            "label": "$50-100K",
+            "count": 9,
+            "totalUSD": 564711.675744067
+          },
+          {
+            "label": "$100K-500K",
+            "count": 11,
+            "totalUSD": 2078524.7854199733
+          },
+          {
+            "label": "$500K-1M",
+            "count": 1,
+            "totalUSD": 534224.8530910141
+          },
+          {
+            "label": ">$1M",
+            "count": 2,
+            "totalUSD": 11097357.79423728
+          }
+        ]
+      },
+      "utilization": 82.60878768211347
+    },
+    "sDAI": {
+      "price": 1.17,
+      "supply": {
+        "totalUSD": 19003765.048125852,
+        "holderCount": 280,
+        "top10": [
+          {
+            "holder": "0x562236C0D4FD95E26c53aC56b7d118E420ca1716",
+            "usd": 3678528,
+            "pct": 19.356839306132052,
+            "type": "organic"
+          },
+          {
+            "holder": "0xac5E7a21855222E7aA894DFb069b7F061c7Fd61E",
+            "usd": 2405864,
+            "pct": 12.659930949507125,
+            "type": "organic"
+          },
+          {
+            "holder": "0x324B5BaA4C8C518749ED69992226c745e494a4B7",
+            "usd": 2240242,
+            "pct": 11.78840994990385,
+            "type": "organic"
+          },
+          {
+            "holder": "0x750e4d5efbeaE1C8C2A1BaCfe93A75aB3989e380",
+            "usd": 895485,
+            "pct": 4.712142878230418,
+            "type": "organic"
+          },
+          {
+            "holder": "0x8349e897C5802adEC1b2F2FC35c1Cf1aBAb95470",
+            "usd": 830238,
+            "pct": 4.36880597558132,
+            "type": "organic"
+          },
+          {
+            "holder": "0x8eed91626aA75c3bcEa2a7B5feA63F657cec370c",
+            "usd": 551377,
+            "pct": 2.9014083166448006,
+            "type": "organic"
+          },
+          {
+            "holder": "0x58A24Fa9AE8847CBCf245Dd2eF7FceF205927af1",
+            "usd": 513442,
+            "pct": 2.701790386673284,
+            "type": "organic"
+          },
+          {
+            "holder": "0xDEE50018Dfddac5d03eBd27CFD7E425BB54e1571",
+            "usd": 471509,
+            "pct": 2.481137087625388,
+            "type": "organic"
+          },
+          {
+            "holder": "0xa87e0d2E9e7198Bfa05a89f821D51906b3d51549",
+            "usd": 392393,
+            "pct": 2.064818671733687,
+            "type": "organic"
+          },
+          {
+            "holder": "0x7852f22CEfa8Bd0d6a38A6Dc3F76e6e88c091A7C",
+            "usd": 382157,
+            "pct": 2.0109547052203456,
+            "type": "organic"
+          }
+        ],
+        "concentration": {
+          "top1": 19.356839306132052,
+          "top5": 52.88612905935477,
+          "top10": 65.04623822725229,
+          "hhi": 0.07744016373340099,
+          "gini": 0.9011117318136525
+        },
+        "categories": {
+          "gnosisDAO": 0,
+          "protocol": 2577.5471143919394,
+          "organic": 19001187.50101146
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 106,
+            "totalUSD": 15350.334355080044
+          },
+          {
+            "label": "$1-10K",
+            "count": 81,
+            "totalUSD": 332022.4285459072
+          },
+          {
+            "label": "$10-50K",
+            "count": 46,
+            "totalUSD": 1056222.13231609
+          },
+          {
+            "label": "$50-100K",
+            "count": 17,
+            "totalUSD": 1284332.6666551188
+          },
+          {
+            "label": "$100K-500K",
+            "count": 23,
+            "totalUSD": 5200663.060007077
+          },
+          {
+            "label": "$500K-1M",
+            "count": 4,
+            "totalUSD": 2790540.9010770633
+          },
+          {
+            "label": ">$1M",
+            "count": 3,
+            "totalUSD": 8324633.525169531
+          }
+        ]
+      },
+      "borrow": {
+        "totalUSD": 0,
+        "holderCount": 0,
+        "top10": [],
+        "concentration": {
+          "top1": 0,
+          "top5": 0,
+          "top10": 0,
+          "hhi": 0,
+          "gini": 0
+        },
+        "categories": {
+          "gnosisDAO": 0,
+          "protocol": 0,
+          "organic": 0
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": "$1-10K",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": "$10-50K",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": "$50-100K",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": "$100K-500K",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": "$500K-1M",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": ">$1M",
+            "count": 0,
+            "totalUSD": 0
+          }
+        ]
+      },
+      "utilization": 0
+    },
+    "GNO": {
+      "price": 126.63,
+      "supply": {
+        "totalUSD": 11425165.717897182,
+        "holderCount": 189,
+        "top10": [
+          {
+            "holder": "0xFe13988736d95D052C2E45e5b4E1Ef2e2750b7F4",
+            "usd": 4277830,
+            "pct": 37.44216759699186,
+            "type": "organic"
+          },
+          {
+            "holder": "0xa99640210D21A7318c3b85C19Ce5b3d49251E04d",
+            "usd": 2576595,
+            "pct": 22.551930665799794,
+            "type": "organic"
+          },
+          {
+            "holder": "0x9065A0F9545817d18b58436771b4d87Bda8f008B",
+            "usd": 1904633,
+            "pct": 16.670509789679205,
+            "type": "gnosisDAO"
+          },
+          {
+            "holder": "0x7D6A7eE46f6d5AddE1A19776b441AA0dF3279530",
+            "usd": 634349,
+            "pct": 5.5522088712174815,
+            "type": "organic"
+          },
+          {
+            "holder": "0x002C0910740839f5A929896F545b1526665DAb09",
+            "usd": 414899,
+            "pct": 3.631444281773269,
+            "type": "organic"
+          },
+          {
+            "holder": "0xC4a69FBf4511A1377161834Cb7a3B8766953dB02",
+            "usd": 378718,
+            "pct": 3.3147735296588063,
+            "type": "organic"
+          },
+          {
+            "holder": "0xa8d3b89fA7FE3f118c169b9D32a939C4B9D30216",
+            "usd": 267362,
+            "pct": 2.340118902724884,
+            "type": "organic"
+          },
+          {
+            "holder": "0x192B3147D30fe60Bef09e6A50ABF1140E889c5aD",
+            "usd": 253371,
+            "pct": 2.2176555531853546,
+            "type": "organic"
+          },
+          {
+            "holder": "0xe837770fc477522360cf620BC15bA34Cb9e4a6d0",
+            "usd": 170395,
+            "pct": 1.4914028097871,
+            "type": "organic"
+          },
+          {
+            "holder": "0x03118e02cE007a0F0d1C9D806c2a7D5Ae2F26995",
+            "usd": 168998,
+            "pct": 1.479172208847278,
+            "type": "organic"
+          }
+        ],
+        "concentration": {
+          "top1": 37.44216759699186,
+          "top5": 85.84826120546161,
+          "top10": 96.69138420966503,
+          "hhi": 0.22598577948444112,
+          "gini": 0.9724963818975049
+        },
+        "categories": {
+          "gnosisDAO": 1904633.7117491663,
+          "protocol": 17651.33539357283,
+          "organic": 9502880.670754444
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 149,
+            "totalUSD": 11847.60629620078
+          },
+          {
+            "label": "$1-10K",
+            "count": 23,
+            "totalUSD": 80746.70734111188
+          },
+          {
+            "label": "$10-50K",
+            "count": 6,
+            "totalUSD": 157113.00404474567
+          },
+          {
+            "label": "$50-100K",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": "$100K-500K",
+            "count": 7,
+            "totalUSD": 1782050.8187035825
+          },
+          {
+            "label": "$500K-1M",
+            "count": 1,
+            "totalUSD": 634349.0645403859
+          },
+          {
+            "label": ">$1M",
+            "count": 3,
+            "totalUSD": 8759058.516971143
+          }
+        ]
+      },
+      "borrow": {
+        "totalUSD": 2125413.7439804054,
+        "holderCount": 86,
+        "top10": [
+          {
+            "holder": "0x8349e897C5802adEC1b2F2FC35c1Cf1aBAb95470",
+            "usd": 665693,
+            "pct": 31.320654308832086,
+            "type": "organic"
+          },
+          {
+            "holder": "0xc11cc223A3ffc89044Cfe0D5340E61BF6e579467",
+            "usd": 275938,
+            "pct": 12.98280320216495,
+            "type": "organic"
+          },
+          {
+            "holder": "0xf26eca531C8B5F6AD7e2C2cdF17cE93005Bae875",
+            "usd": 258774,
+            "pct": 12.175228399185881,
+            "type": "organic"
+          },
+          {
+            "holder": "0xa87e0d2E9e7198Bfa05a89f821D51906b3d51549",
+            "usd": 145691,
+            "pct": 6.854701116494236,
+            "type": "organic"
+          },
+          {
+            "holder": "0xE76Be9C1e10910d6Bc6b63D8031729747910c2f6",
+            "usd": 133998,
+            "pct": 6.304549330399066,
+            "type": "organic"
+          },
+          {
+            "holder": "0xe6a0AA406B1A046a9d885e7e0C9225f6650Ee229",
+            "usd": 125793,
+            "pct": 5.91851756959368,
+            "type": "organic"
+          },
+          {
+            "holder": "0x188002126Ed443B4D13193b92fF4ec6dE38190D0",
+            "usd": 104858,
+            "pct": 4.933551298161138,
+            "type": "organic"
+          },
+          {
+            "holder": "0xfF1096d83E15c2cE04dB158Cc431361f25F69Bc1",
+            "usd": 79867,
+            "pct": 3.7577226673886694,
+            "type": "organic"
+          },
+          {
+            "holder": "0x2764034e0d06C6d45E66DE9de1F8f00E193835c4",
+            "usd": 57381,
+            "pct": 2.6997639892806244,
+            "type": "organic"
+          },
+          {
+            "holder": "0x2821ca19f08F1E056305B8C7b9284Bc71478C5A3",
+            "usd": 53345,
+            "pct": 2.5098648215070667,
+            "type": "organic"
+          }
+        ],
+        "concentration": {
+          "top1": 31.320654308832086,
+          "top5": 69.63793635707621,
+          "top10": 89.4573567030074,
+          "hhi": 0.14814166155332015,
+          "gini": 0.8945434041317368
+        },
+        "categories": {
+          "gnosisDAO": 0,
+          "protocol": 0,
+          "organic": 2125413.7439804054
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 39,
+            "totalUSD": 9799.251417502463
+          },
+          {
+            "label": "$1-10K",
+            "count": 31,
+            "totalUSD": 72006.39311178033
+          },
+          {
+            "label": "$10-50K",
+            "count": 6,
+            "totalUSD": 142269.14508382796
+          },
+          {
+            "label": "$50-100K",
+            "count": 3,
+            "totalUSD": 190593.3207881904
+          },
+          {
+            "label": "$100K-500K",
+            "count": 6,
+            "totalUSD": 1045052.1421945969
+          },
+          {
+            "label": "$500K-1M",
+            "count": 1,
+            "totalUSD": 665693.4913845082
+          },
+          {
+            "label": ">$1M",
+            "count": 0,
+            "totalUSD": 0
+          }
+        ]
+      },
+      "utilization": 18.602913922298807
+    },
+    "USDCe": {
+      "price": 1,
+      "supply": {
+        "totalUSD": 8955996.220309988,
+        "holderCount": 139,
+        "top10": [
+          {
+            "holder": "0x9065A0F9545817d18b58436771b4d87Bda8f008B",
+            "usd": 7099196,
+            "pct": 79.26751562346328,
+            "type": "gnosisDAO"
+          },
+          {
+            "holder": "0xf0E7eC247b918311afa054E0AEdb99d74c31b809",
+            "usd": 850607,
+            "pct": 9.497624488195223,
+            "type": "protocol"
+          },
+          {
+            "holder": "0x51350d88c1bd32Cc6A79368c9Fb70373Fb71F375",
+            "usd": 303059,
+            "pct": 3.383872540842926,
+            "type": "protocol"
+          },
+          {
+            "holder": "0x2764034e0d06C6d45E66DE9de1F8f00E193835c4",
+            "usd": 155734,
+            "pct": 1.738884201635021,
+            "type": "organic"
+          },
+          {
+            "holder": "0x7851c34cD423166a25d72dE22Fce6D81E63B96C4",
+            "usd": 60000,
+            "pct": 0.6699422210890936,
+            "type": "organic"
+          },
+          {
+            "holder": "0xAbe24436BfB948edA4AE727E99Ec064af5940945",
+            "usd": 50000,
+            "pct": 0.5582851842502161,
+            "type": "organic"
+          },
+          {
+            "holder": "0x3c311D8Efb34ceC6A6Af5133F3b3fcD4B522DDe4",
+            "usd": 46685,
+            "pct": 0.521271892501805,
+            "type": "organic"
+          },
+          {
+            "holder": "0xB70D29deCca758BB72Cd2967a989782F3acAd3e6",
+            "usd": 45453,
+            "pct": 0.5075139771153987,
+            "type": "organic"
+          },
+          {
+            "holder": "0x3e652E97ff339B73421f824F5b03d75b62F1Fb51",
+            "usd": 29940,
+            "pct": 0.3342987764119859,
+            "type": "protocol"
+          },
+          {
+            "holder": "0x02CA4101eA84f400c62b3BeB87Fb5450a8702941",
+            "usd": 29453,
+            "pct": 0.32886556486264973,
+            "type": "organic"
+          }
+        ],
+        "concentration": {
+          "top1": 79.26751562346328,
+          "top5": 94.55783907522553,
+          "top10": 96.8080744703676,
+          "hhi": 0.6389967050126941,
+          "gini": 0.9766920927728289
+        },
+        "categories": {
+          "gnosisDAO": 7099201.203445,
+          "protocol": 1183606.17282,
+          "organic": 673188.8440450003
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 81,
+            "totalUSD": 11329.922034999994
+          },
+          {
+            "label": "$1-10K",
+            "count": 39,
+            "totalUSD": 115569.76379200001
+          },
+          {
+            "label": "$10-50K",
+            "count": 13,
+            "totalUSD": 310500.040899
+          },
+          {
+            "label": "$50-100K",
+            "count": 2,
+            "totalUSD": 109999.99999899999
+          },
+          {
+            "label": "$100K-500K",
+            "count": 2,
+            "totalUSD": 458793.900232
+          },
+          {
+            "label": "$500K-1M",
+            "count": 1,
+            "totalUSD": 850606.890182
+          },
+          {
+            "label": ">$1M",
+            "count": 1,
+            "totalUSD": 7099195.703171
+          }
+        ]
+      },
+      "borrow": {
+        "totalUSD": 4276265.1085990025,
+        "holderCount": 115,
+        "top10": [
+          {
+            "holder": "0xa99640210D21A7318c3b85C19Ce5b3d49251E04d",
+            "usd": 757840,
+            "pct": 17.72201206747177,
+            "type": "organic"
+          },
+          {
+            "holder": "0x8eed91626aA75c3bcEa2a7B5feA63F657cec370c",
+            "usd": 520986,
+            "pct": 12.183193554075187,
+            "type": "organic"
+          },
+          {
+            "holder": "0xDEE50018Dfddac5d03eBd27CFD7E425BB54e1571",
+            "usd": 435844,
+            "pct": 10.192173654191242,
+            "type": "organic"
+          },
+          {
+            "holder": "0xac5E7a21855222E7aA894DFb069b7F061c7Fd61E",
+            "usd": 366326,
+            "pct": 8.56649078104085,
+            "type": "organic"
+          },
+          {
+            "holder": "0xcb41546c449987cA614C41BfC0735dDFEEC4cE11",
+            "usd": 182060,
+            "pct": 4.257448120905833,
+            "type": "organic"
+          },
+          {
+            "holder": "0x192B3147D30fe60Bef09e6A50ABF1140E889c5aD",
+            "usd": 176545,
+            "pct": 4.128480287248606,
+            "type": "organic"
+          },
+          {
+            "holder": "0x002C0910740839f5A929896F545b1526665DAb09",
+            "usd": 145576,
+            "pct": 3.4042837745551733,
+            "type": "organic"
+          },
+          {
+            "holder": "0xfB04Df5BC87A78eBcFAa207847dA146bd2a7d390",
+            "usd": 142644,
+            "pct": 3.3357158599723324,
+            "type": "organic"
+          },
+          {
+            "holder": "0x7D6A7eE46f6d5AddE1A19776b441AA0dF3279530",
+            "usd": 133411,
+            "pct": 3.119800301546513,
+            "type": "organic"
+          },
+          {
+            "holder": "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A",
+            "usd": 127654,
+            "pct": 2.985176285710271,
+            "type": "organic"
+          }
+        ],
+        "concentration": {
+          "top1": 17.72201206747177,
+          "top5": 52.92131817768488,
+          "top10": 69.89477468671778,
+          "hhi": 0.07615569604016197,
+          "gini": 0.8509413324230821
+        },
+        "categories": {
+          "gnosisDAO": 0,
+          "protocol": 0,
+          "organic": 4276265.1085990025
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 42,
+            "totalUSD": 10878.830184000006
+          },
+          {
+            "label": "$1-10K",
+            "count": 37,
+            "totalUSD": 124639.41063799997
+          },
+          {
+            "label": "$10-50K",
+            "count": 18,
+            "totalUSD": 420692.472528
+          },
+          {
+            "label": "$50-100K",
+            "count": 5,
+            "totalUSD": 403412.836134
+          },
+          {
+            "label": "$100K-500K",
+            "count": 11,
+            "totalUSD": 2037815.6854659996
+          },
+          {
+            "label": "$500K-1M",
+            "count": 2,
+            "totalUSD": 1278825.873649
+          },
+          {
+            "label": ">$1M",
+            "count": 0,
+            "totalUSD": 0
+          }
+        ]
+      },
+      "utilization": 47.747509081139285
+    },
+    "WETH": {
+      "price": 1959.26,
+      "supply": {
+        "totalUSD": 4596001.940895867,
+        "holderCount": 340,
+        "top10": [
+          {
+            "holder": "0x9065A0F9545817d18b58436771b4d87Bda8f008B",
+            "usd": 2302566,
+            "pct": 50.099330255640616,
+            "type": "gnosisDAO"
+          },
+          {
+            "holder": "0x57f664882F762FA37903FC864e2B633D384B411A",
+            "usd": 614160,
+            "pct": 13.362917132054609,
+            "type": "protocol"
+          },
+          {
+            "holder": "0xfB04Df5BC87A78eBcFAa207847dA146bd2a7d390",
+            "usd": 151059,
+            "pct": 3.2867486916927224,
+            "type": "organic"
+          },
+          {
+            "holder": "0xa99640210D21A7318c3b85C19Ce5b3d49251E04d",
+            "usd": 138614,
+            "pct": 3.015973005345143,
+            "type": "organic"
+          },
+          {
+            "holder": "0x3c311D8Efb34ceC6A6Af5133F3b3fcD4B522DDe4",
+            "usd": 112682,
+            "pct": 2.4517442500369904,
+            "type": "organic"
+          },
+          {
+            "holder": "0x540A623c7ed0c09E1B3916A83d93f2F59d44eA89",
+            "usd": 89918,
+            "pct": 1.9564309199598426,
+            "type": "organic"
+          },
+          {
+            "holder": "0xE9911aeFBb6fb95C188c7D06880AEe3C34A5d0c1",
+            "usd": 78370,
+            "pct": 1.7051882590288714,
+            "type": "organic"
+          },
+          {
+            "holder": "0xfF1096d83E15c2cE04dB158Cc431361f25F69Bc1",
+            "usd": 63653,
+            "pct": 1.384959754670096,
+            "type": "organic"
+          },
+          {
+            "holder": "0xE1e00B8e4CFa469dAe2A5954d88CeaE92D8A6daE",
+            "usd": 51704,
+            "pct": 1.124974019764331,
+            "type": "organic"
+          },
+          {
+            "holder": "0x5036e1B8709C9A60B1c9067219B74f8c52963cd6",
+            "usd": 43812,
+            "pct": 0.9532588087320684,
+            "type": "organic"
+          }
+        ],
+        "concentration": {
+          "top1": 50.099330255640616,
+          "top5": 72.21671333477008,
+          "top10": 79.3415250969253,
+          "hhi": 0.27340171153495674,
+          "gini": 0.9476667259616
+        },
+        "categories": {
+          "gnosisDAO": 2302566.840319544,
+          "protocol": 634846.2678561537,
+          "organic": 1658588.8327201668
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 220,
+            "totalUSD": 22312.768192498977
+          },
+          {
+            "label": "$1-10K",
+            "count": 83,
+            "totalUSD": 304204.91397453105
+          },
+          {
+            "label": "$10-50K",
+            "count": 28,
+            "totalUSD": 666758.0186888584
+          },
+          {
+            "label": "$50-100K",
+            "count": 4,
+            "totalUSD": 283644.69352274376
+          },
+          {
+            "label": "$100K-500K",
+            "count": 3,
+            "totalUSD": 402355.42484262807
+          },
+          {
+            "label": "$500K-1M",
+            "count": 1,
+            "totalUSD": 614159.930749536
+          },
+          {
+            "label": ">$1M",
+            "count": 1,
+            "totalUSD": 2302566.190925073
+          }
+        ]
+      },
+      "borrow": {
+        "totalUSD": 2696379.1856291774,
+        "holderCount": 44,
+        "top10": [
+          {
+            "holder": "0x2735A560ca4a5ec14776a2cEF36280f17a980CD2",
+            "usd": 1399935,
+            "pct": 51.91906750466694,
+            "type": "organic"
+          },
+          {
+            "holder": "0x1BB6CF41f46cc3DF94C388C5a1401Ba314AC9b6D",
+            "usd": 343419,
+            "pct": 12.736285251172877,
+            "type": "organic"
+          },
+          {
+            "holder": "0xdA3A77c39c7D6e02B923Ce96c8048b462bDC386D",
+            "usd": 215557,
+            "pct": 7.9943166605167875,
+            "type": "organic"
+          },
+          {
+            "holder": "0xBBeefC36f1947609476097fEB4389e1C89293F4f",
+            "usd": 117818,
+            "pct": 4.3695021851792095,
+            "type": "organic"
+          },
+          {
+            "holder": "0xA3851450524A6188D40869885f877982869DbEc6",
+            "usd": 112670,
+            "pct": 4.178565448828301,
+            "type": "organic"
+          },
+          {
+            "holder": "0x7852f22CEfa8Bd0d6a38A6Dc3F76e6e88c091A7C",
+            "usd": 97963,
+            "pct": 3.63313144242141,
+            "type": "organic"
+          },
+          {
+            "holder": "0x64525811777f9463aB3a7BF1a855e86f8f47692D",
+            "usd": 70284,
+            "pct": 2.6066249850733336,
+            "type": "organic"
+          },
+          {
+            "holder": "0x6c2693F5a936f37eD03CfA8465bF2D8BEFf19A0f",
+            "usd": 48515,
+            "pct": 1.7992720785584715,
+            "type": "organic"
+          },
+          {
+            "holder": "0xfF531Cc7aA2d7a84a59Bb5Df1eDF32Bc39c3b31F",
+            "usd": 45337,
+            "pct": 1.6814103875091462,
+            "type": "organic"
+          },
+          {
+            "holder": "0x13F7f63dD3586d855Ad621c74b9aF409c0EB24E6",
+            "usd": 37243,
+            "pct": 1.3812122577222508,
+            "type": "organic"
+          }
+        ],
+        "concentration": {
+          "top1": 51.91906750466694,
+          "top5": 81.19773705036411,
+          "top10": 92.29938820164871,
+          "hhi": 0.2991022732017261,
+          "gini": 0.8649711174466556
+        },
+        "categories": {
+          "gnosisDAO": 0,
+          "protocol": 0,
+          "organic": 2696379.1856291774
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 18,
+            "totalUSD": 3771.350086358578
+          },
+          {
+            "label": "$1-10K",
+            "count": 6,
+            "totalUSD": 27434.887501754474
+          },
+          {
+            "label": "$10-50K",
+            "count": 13,
+            "totalUSD": 307526.5734682095
+          },
+          {
+            "label": "$50-100K",
+            "count": 2,
+            "totalUSD": 168247.49354492704
+          },
+          {
+            "label": "$100K-500K",
+            "count": 4,
+            "totalUSD": 789463.9514593274
+          },
+          {
+            "label": "$500K-1M",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": ">$1M",
+            "count": 1,
+            "totalUSD": 1399934.9295686013
+          }
+        ]
+      },
+      "utilization": 58.66792965504255
+    },
+    "WXDAI": {
+      "price": 1,
+      "supply": {
+        "totalUSD": 2987173.714558315,
+        "holderCount": 11818,
+        "top10": [
+          {
+            "holder": "0x9065A0F9545817d18b58436771b4d87Bda8f008B",
+            "usd": 1441535,
+            "pct": 48.25748934455028,
+            "type": "gnosisDAO"
+          },
+          {
+            "holder": "0x3e652E97ff339B73421f824F5b03d75b62F1Fb51",
+            "usd": 289031,
+            "pct": 9.675740767304758,
+            "type": "protocol"
+          },
+          {
+            "holder": "0xA6035580d4e4dB8c72B2a1C49D781ae7138308e8",
+            "usd": 254178,
+            "pct": 8.508989737611028,
+            "type": "organic"
+          },
+          {
+            "holder": "0x8349e897C5802adEC1b2F2FC35c1Cf1aBAb95470",
+            "usd": 200376,
+            "pct": 6.707883253639821,
+            "type": "organic"
+          },
+          {
+            "holder": "0xBc00346212a9Eb88B0348922ce919d0bD4D3f4B2",
+            "usd": 97575,
+            "pct": 3.2664568565256458,
+            "type": "organic"
+          },
+          {
+            "holder": "0xcf04F8DBac3c3cc6CE162F633c875b1b23b40ef2",
+            "usd": 51624,
+            "pct": 1.7281904310025686,
+            "type": "organic"
+          },
+          {
+            "holder": "0xf223E8B4FBA1b320F18C0CdB83dEa975B4c46507",
+            "usd": 48146,
+            "pct": 1.6117575458105906,
+            "type": "organic"
+          },
+          {
+            "holder": "0xe08b63F5b87372e0bb92535AD32C2720344E25d2",
+            "usd": 43698,
+            "pct": 1.4628425654276558,
+            "type": "organic"
+          },
+          {
+            "holder": "0x3e154e4e7975Dc3646c6E00797d9A60933b3eDCd",
+            "usd": 40000,
+            "pct": 1.339058402623188,
+            "type": "organic"
+          },
+          {
+            "holder": "0xB75af6aAc0B676857BD1e0953849593b25f6AdEc",
+            "usd": 31220,
+            "pct": 1.0451247140135485,
+            "type": "organic"
+          }
+        ],
+        "concentration": {
+          "top1": 48.25748934455028,
+          "top5": 76.41655995963154,
+          "top10": 83.60353361850909,
+          "hhi": 0.2567530348878837,
+          "gini": 0.9979854051905255
+        },
+        "categories": {
+          "gnosisDAO": 1441539.5714760064,
+          "protocol": 289031.18488973076,
+          "organic": 1256602.9581926973
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 11721,
+            "totalUSD": 40313.1856858947
+          },
+          {
+            "label": "$1-10K",
+            "count": 76,
+            "totalUSD": 234659.67209737265
+          },
+          {
+            "label": "$10-50K",
+            "count": 15,
+            "totalUSD": 377881.41379861656
+          },
+          {
+            "label": "$50-100K",
+            "count": 2,
+            "totalUSD": 149198.7909079427
+          },
+          {
+            "label": "$100K-500K",
+            "count": 3,
+            "totalUSD": 743585.6150620998
+          },
+          {
+            "label": "$500K-1M",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": ">$1M",
+            "count": 1,
+            "totalUSD": 1441535.0370061856
+          }
+        ]
+      },
+      "borrow": {
+        "totalUSD": 1962067.80384381,
+        "holderCount": 63,
+        "top10": [
+          {
+            "holder": "0x324B5BaA4C8C518749ED69992226c745e494a4B7",
+            "usd": 1473013,
+            "pct": 75.07454590590041,
+            "type": "organic"
+          },
+          {
+            "holder": "0x8f8888E07D5Bf2C5F4F7C14eCEf37CD6D49d4581",
+            "usd": 116263,
+            "pct": 5.925532914218896,
+            "type": "organic"
+          },
+          {
+            "holder": "0x20b5cCe57F420C275621Ed3B7E78E8F2d6F21717",
+            "usd": 62167,
+            "pct": 3.168418248061417,
+            "type": "organic"
+          },
+          {
+            "holder": "0x03118e02cE007a0F0d1C9D806c2a7D5Ae2F26995",
+            "usd": 50560,
+            "pct": 2.5768766956979454,
+            "type": "organic"
+          },
+          {
+            "holder": "0xbeEf4DADE5cA40347ED018Bf80c6FD244eD44492",
+            "usd": 40059,
+            "pct": 2.041653996464554,
+            "type": "organic"
+          },
+          {
+            "holder": "0x483fbB92E9e0bEF834C8ad42223267eCcEAa6E8C",
+            "usd": 31853,
+            "pct": 1.6234469149174493,
+            "type": "organic"
+          },
+          {
+            "holder": "0xa99640210D21A7318c3b85C19Ce5b3d49251E04d",
+            "usd": 27682,
+            "pct": 1.4108576963318766,
+            "type": "organic"
+          },
+          {
+            "holder": "0x89344efA2d9953accd3e907EAb27B33542eD9E25",
+            "usd": 25684,
+            "pct": 1.3090074423350755,
+            "type": "organic"
+          },
+          {
+            "holder": "0xFC1124D525CEa6f6441257192d3e762387E99144",
+            "usd": 21998,
+            "pct": 1.1211564119102506,
+            "type": "organic"
+          },
+          {
+            "holder": "0x540A623c7ed0c09E1B3916A83d93f2F59d44eA89",
+            "usd": 12814,
+            "pct": 0.6530962676044542,
+            "type": "organic"
+          }
+        ],
+        "concentration": {
+          "top1": 75.07454590590041,
+          "top5": 88.78702776034324,
+          "top10": 94.90459249344235,
+          "hhi": 0.5701506648595153,
+          "gini": 0.9307606561947034
+        },
+        "categories": {
+          "gnosisDAO": 0,
+          "protocol": 0,
+          "organic": 1962067.80384381
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 28,
+            "totalUSD": 9912.226519751051
+          },
+          {
+            "label": "$1-10K",
+            "count": 25,
+            "totalUSD": 90063.12364105729
+          },
+          {
+            "label": "$10-50K",
+            "count": 6,
+            "totalUSD": 160089.40373796254
+          },
+          {
+            "label": "$50-100K",
+            "count": 2,
+            "totalUSD": 112726.58232736879
+          },
+          {
+            "label": "$100K-500K",
+            "count": 1,
+            "totalUSD": 116262.9735160568
+          },
+          {
+            "label": "$500K-1M",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": ">$1M",
+            "count": 1,
+            "totalUSD": 1473013.4941016133
+          }
+        ]
+      },
+      "utilization": 65.68308345381656
+    },
+    "GHO": {
+      "price": 1,
+      "supply": {
+        "totalUSD": 805801.4693529552,
+        "holderCount": 22,
+        "top10": [
+          {
+            "holder": "0x9065A0F9545817d18b58436771b4d87Bda8f008B",
+            "usd": 500057,
+            "pct": 62.05704646105239,
+            "type": "gnosisDAO"
+          },
+          {
+            "holder": "0x58d9AcAC48A4077E4909181c48DEcD00E5ba5DE4",
+            "usd": 269963,
+            "pct": 33.5024089968722,
+            "type": "protocol"
+          },
+          {
+            "holder": "0xEF1FA0B5705F68B38582e227D3259ae8D12A8b4A",
+            "usd": 27913,
+            "pct": 3.4640229700093195,
+            "type": "organic"
+          },
+          {
+            "holder": "0xD56689bE84aFAa0C94cF11bAee75Df458296EAEA",
+            "usd": 2084,
+            "pct": 0.2586788864321917,
+            "type": "organic"
+          },
+          {
+            "holder": "0x3e652E97ff339B73421f824F5b03d75b62F1Fb51",
+            "usd": 1712,
+            "pct": 0.21242881183709614,
+            "type": "protocol"
+          },
+          {
+            "holder": "0x3c6558dd0EA3a976478e8e4235a432d61F2d58E7",
+            "usd": 1175,
+            "pct": 0.14580758616505085,
+            "type": "organic"
+          },
+          {
+            "holder": "0x091b94FEb61bc97429A4f0F9a4bd193AC3ED9827",
+            "usd": 965,
+            "pct": 0.11975654509228911,
+            "type": "organic"
+          },
+          {
+            "holder": "0x362c8697845886da6C0799a914bBc5086EB2A8D0",
+            "usd": 784,
+            "pct": 0.09724254008386078,
+            "type": "organic"
+          },
+          {
+            "holder": "0x47eF1dD656665Af03e38284A3515d98C912cd842",
+            "usd": 607,
+            "pct": 0.0752972065049077,
+            "type": "organic"
+          },
+          {
+            "holder": "0x39259C0964628892E7f56a68fE82488ca850A62d",
+            "usd": 136,
+            "pct": 0.016846490161216924,
+            "type": "organic"
+          }
+        ],
+        "concentration": {
+          "top1": 62.05704646105239,
+          "top5": 99.4945861262032,
+          "top10": 99.94953649421052,
+          "hhi": 0.4985651531631922,
+          "gini": 0.9131633783120457
+        },
+        "categories": {
+          "gnosisDAO": 500056.69387089135,
+          "protocol": 271674.6584525452,
+          "organic": 34070.11702951847
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 16,
+            "totalUSD": 2897.7127496220673
+          },
+          {
+            "label": "$1-10K",
+            "count": 3,
+            "totalUSD": 4971.112426634864
+          },
+          {
+            "label": "$10-50K",
+            "count": 1,
+            "totalUSD": 27913.147991058973
+          },
+          {
+            "label": "$50-100K",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": "$100K-500K",
+            "count": 1,
+            "totalUSD": 269962.90396543284
+          },
+          {
+            "label": "$500K-1M",
+            "count": 1,
+            "totalUSD": 500056.5922202063
+          },
+          {
+            "label": ">$1M",
+            "count": 0,
+            "totalUSD": 0
+          }
+        ]
+      },
+      "borrow": {
+        "totalUSD": 331068.28241934185,
+        "holderCount": 11,
+        "top10": [
+          {
+            "holder": "0xFe13988736d95D052C2E45e5b4E1Ef2e2750b7F4",
+            "usd": 315798,
+            "pct": 95.38771315843604,
+            "type": "organic"
+          },
+          {
+            "holder": "0x5F4B55E9b0abEe1904Ee913a553871d1aB404ABc",
+            "usd": 6201,
+            "pct": 1.8730298771367302,
+            "type": "organic"
+          },
+          {
+            "holder": "0x192B3147D30fe60Bef09e6A50ABF1140E889c5aD",
+            "usd": 5708,
+            "pct": 1.7241200763339959,
+            "type": "organic"
+          },
+          {
+            "holder": "0x690CB599054C54670522186EDc231e9a8Da202ac",
+            "usd": 1072,
+            "pct": 0.32373966713141067,
+            "type": "organic"
+          },
+          {
+            "holder": "0x884898480d7a1223ec55Cb1aBA92DBd46A643744",
+            "usd": 824,
+            "pct": 0.24902503265443945,
+            "type": "organic"
+          },
+          {
+            "holder": "0x9821e080cC298b0bDAc867D1Be37FD769dd13B79",
+            "usd": 617,
+            "pct": 0.18646755300410772,
+            "type": "organic"
+          },
+          {
+            "holder": "0x9959D6455e6D82BDd02790178668603E520020FE",
+            "usd": 500,
+            "pct": 0.15102653545167682,
+            "type": "organic"
+          },
+          {
+            "holder": "0x7bd4674162f460057D9ECdF936B3671EE934D942",
+            "usd": 200,
+            "pct": 0.06041049856496778,
+            "type": "organic"
+          },
+          {
+            "holder": "0x40D3da26C9Dc288D0aADB34532a879bF75bCb5E3",
+            "usd": 100,
+            "pct": 0.03020524928248389,
+            "type": "organic"
+          },
+          {
+            "holder": "0xb75bb5ed0Bc2Aa33756b7aEB3f7FF09D3e41d4FC",
+            "usd": 32,
+            "pct": 0.009669875540579792,
+            "type": "organic"
+          }
+        ],
+        "concentration": {
+          "top1": 95.38771315843604,
+          "top5": 99.55762781169261,
+          "top10": 99.99540752353644,
+          "hhi": 0.9105525728938789,
+          "gini": 0.8910462631486133
+        },
+        "categories": {
+          "gnosisDAO": 0,
+          "protocol": 0,
+          "organic": 331068.28241934185
+        },
+        "buckets": [
+          {
+            "label": "<$1K",
+            "count": 7,
+            "totalUSD": 2288.9969041333243
+          },
+          {
+            "label": "$1-10K",
+            "count": 3,
+            "totalUSD": 12980.821922485746
+          },
+          {
+            "label": "$10-50K",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": "$50-100K",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": "$100K-500K",
+            "count": 1,
+            "totalUSD": 315798.4635927228
+          },
+          {
+            "label": "$500K-1M",
+            "count": 0,
+            "totalUSD": 0
+          },
+          {
+            "label": ">$1M",
+            "count": 0,
+            "totalUSD": 0
+          }
+        ]
+      },
+      "utilization": 41.08558931831981
+    }
+  },
+  "dailyActivity": [
+    {
+      "date": "2023-11-07",
+      "supply": 170,
+      "debt": 69
+    },
+    {
+      "date": "2023-11-08",
+      "supply": 47,
+      "debt": 29
+    },
+    {
+      "date": "2023-11-09",
+      "supply": 94,
+      "debt": 64
+    },
+    {
+      "date": "2023-11-10",
+      "supply": 86,
+      "debt": 57
+    },
+    {
+      "date": "2023-11-11",
+      "supply": 34,
+      "debt": 15
+    },
+    {
+      "date": "2023-11-12",
+      "supply": 21,
+      "debt": 12
+    },
+    {
+      "date": "2023-11-13",
+      "supply": 47,
+      "debt": 18
+    },
+    {
+      "date": "2023-11-14",
+      "supply": 53,
+      "debt": 48
+    },
+    {
+      "date": "2023-11-15",
+      "supply": 74,
+      "debt": 21
+    },
+    {
+      "date": "2023-11-16",
+      "supply": 50,
+      "debt": 35
+    },
+    {
+      "date": "2023-11-17",
+      "supply": 146,
+      "debt": 62
+    },
+    {
+      "date": "2023-11-18",
+      "supply": 105,
+      "debt": 58
+    },
+    {
+      "date": "2023-11-19",
+      "supply": 84,
+      "debt": 38
+    },
+    {
+      "date": "2023-11-20",
+      "supply": 52,
+      "debt": 26
+    },
+    {
+      "date": "2023-11-21",
+      "supply": 58,
+      "debt": 43
+    },
+    {
+      "date": "2023-11-22",
+      "supply": 47,
+      "debt": 20
+    },
+    {
+      "date": "2023-11-23",
+      "supply": 30,
+      "debt": 14
+    },
+    {
+      "date": "2023-11-24",
+      "supply": 52,
+      "debt": 28
+    },
+    {
+      "date": "2023-11-25",
+      "supply": 19,
+      "debt": 10
+    },
+    {
+      "date": "2023-11-26",
+      "supply": 49,
+      "debt": 16
+    },
+    {
+      "date": "2023-11-27",
+      "supply": 43,
+      "debt": 16
+    },
+    {
+      "date": "2023-11-28",
+      "supply": 18,
+      "debt": 5
+    },
+    {
+      "date": "2023-11-29",
+      "supply": 81,
+      "debt": 43
+    },
+    {
+      "date": "2023-11-30",
+      "supply": 62,
+      "debt": 33
+    },
+    {
+      "date": "2023-12-01",
+      "supply": 40,
+      "debt": 26
+    },
+    {
+      "date": "2023-12-02",
+      "supply": 31,
+      "debt": 11
+    },
+    {
+      "date": "2023-12-03",
+      "supply": 54,
+      "debt": 20
+    },
+    {
+      "date": "2023-12-04",
+      "supply": 49,
+      "debt": 20
+    },
+    {
+      "date": "2023-12-05",
+      "supply": 35,
+      "debt": 12
+    },
+    {
+      "date": "2023-12-06",
+      "supply": 49,
+      "debt": 14
+    },
+    {
+      "date": "2023-12-07",
+      "supply": 51,
+      "debt": 39
+    },
+    {
+      "date": "2023-12-08",
+      "supply": 36,
+      "debt": 16
+    },
+    {
+      "date": "2023-12-09",
+      "supply": 26,
+      "debt": 27
+    },
+    {
+      "date": "2023-12-10",
+      "supply": 31,
+      "debt": 5
+    },
+    {
+      "date": "2023-12-11",
+      "supply": 33,
+      "debt": 8
+    },
+    {
+      "date": "2023-12-12",
+      "supply": 31,
+      "debt": 9
+    },
+    {
+      "date": "2023-12-13",
+      "supply": 35,
+      "debt": 15
+    },
+    {
+      "date": "2023-12-14",
+      "supply": 31,
+      "debt": 16
+    },
+    {
+      "date": "2023-12-15",
+      "supply": 123,
+      "debt": 84
+    },
+    {
+      "date": "2023-12-16",
+      "supply": 149,
+      "debt": 61
+    },
+    {
+      "date": "2023-12-17",
+      "supply": 73,
+      "debt": 25
+    },
+    {
+      "date": "2023-12-18",
+      "supply": 56,
+      "debt": 23
+    },
+    {
+      "date": "2023-12-19",
+      "supply": 68,
+      "debt": 49
+    },
+    {
+      "date": "2023-12-20",
+      "supply": 55,
+      "debt": 16
+    },
+    {
+      "date": "2023-12-21",
+      "supply": 54,
+      "debt": 29
+    },
+    {
+      "date": "2023-12-22",
+      "supply": 78,
+      "debt": 54
+    },
+    {
+      "date": "2023-12-23",
+      "supply": 33,
+      "debt": 11
+    },
+    {
+      "date": "2023-12-24",
+      "supply": 38,
+      "debt": 9
+    },
+    {
+      "date": "2023-12-25",
+      "supply": 28,
+      "debt": 7
+    },
+    {
+      "date": "2023-12-26",
+      "supply": 48,
+      "debt": 26
+    },
+    {
+      "date": "2023-12-27",
+      "supply": 30,
+      "debt": 13
+    },
+    {
+      "date": "2023-12-28",
+      "supply": 32,
+      "debt": 27
+    },
+    {
+      "date": "2023-12-29",
+      "supply": 20,
+      "debt": 12
+    },
+    {
+      "date": "2023-12-30",
+      "supply": 26,
+      "debt": 12
+    },
+    {
+      "date": "2023-12-31",
+      "supply": 21,
+      "debt": 8
+    },
+    {
+      "date": "2024-01-01",
+      "supply": 27,
+      "debt": 14
+    },
+    {
+      "date": "2024-01-02",
+      "supply": 98,
+      "debt": 120
+    },
+    {
+      "date": "2024-01-03",
+      "supply": 69,
+      "debt": 34
+    },
+    {
+      "date": "2024-01-04",
+      "supply": 59,
+      "debt": 34
+    },
+    {
+      "date": "2024-01-05",
+      "supply": 17,
+      "debt": 5
+    },
+    {
+      "date": "2024-01-06",
+      "supply": 30,
+      "debt": 23
+    },
+    {
+      "date": "2024-01-07",
+      "supply": 28,
+      "debt": 10
+    },
+    {
+      "date": "2024-01-08",
+      "supply": 28,
+      "debt": 21
+    },
+    {
+      "date": "2024-01-09",
+      "supply": 59,
+      "debt": 25
+    },
+    {
+      "date": "2024-01-10",
+      "supply": 44,
+      "debt": 37
+    },
+    {
+      "date": "2024-01-11",
+      "supply": 38,
+      "debt": 33
+    },
+    {
+      "date": "2024-01-12",
+      "supply": 34,
+      "debt": 31
+    },
+    {
+      "date": "2024-01-13",
+      "supply": 24,
+      "debt": 11
+    },
+    {
+      "date": "2024-01-14",
+      "supply": 27,
+      "debt": 20
+    },
+    {
+      "date": "2024-01-15",
+      "supply": 47,
+      "debt": 26
+    },
+    {
+      "date": "2024-01-16",
+      "supply": 86,
+      "debt": 52
+    },
+    {
+      "date": "2024-01-17",
+      "supply": 41,
+      "debt": 10
+    },
+    {
+      "date": "2024-01-18",
+      "supply": 60,
+      "debt": 22
+    },
+    {
+      "date": "2024-01-19",
+      "supply": 68,
+      "debt": 44
+    },
+    {
+      "date": "2024-01-20",
+      "supply": 71,
+      "debt": 36
+    },
+    {
+      "date": "2024-01-21",
+      "supply": 47,
+      "debt": 21
+    },
+    {
+      "date": "2024-01-22",
+      "supply": 75,
+      "debt": 28
+    },
+    {
+      "date": "2024-01-23",
+      "supply": 96,
+      "debt": 53
+    },
+    {
+      "date": "2024-01-24",
+      "supply": 62,
+      "debt": 22
+    },
+    {
+      "date": "2024-01-25",
+      "supply": 54,
+      "debt": 26
+    },
+    {
+      "date": "2024-01-26",
+      "supply": 68,
+      "debt": 23
+    },
+    {
+      "date": "2024-01-27",
+      "supply": 95,
+      "debt": 16
+    },
+    {
+      "date": "2024-01-28",
+      "supply": 41,
+      "debt": 36
+    },
+    {
+      "date": "2024-01-29",
+      "supply": 82,
+      "debt": 32
+    },
+    {
+      "date": "2024-01-30",
+      "supply": 64,
+      "debt": 33
+    },
+    {
+      "date": "2024-01-31",
+      "supply": 114,
+      "debt": 83
+    },
+    {
+      "date": "2024-02-01",
+      "supply": 295,
+      "debt": 26
+    },
+    {
+      "date": "2024-02-02",
+      "supply": 693,
+      "debt": 31
+    },
+    {
+      "date": "2024-02-03",
+      "supply": 438,
+      "debt": 21
+    },
+    {
+      "date": "2024-02-04",
+      "supply": 407,
+      "debt": 18
+    },
+    {
+      "date": "2024-02-05",
+      "supply": 301,
+      "debt": 39
+    },
+    {
+      "date": "2024-02-06",
+      "supply": 179,
+      "debt": 27
+    },
+    {
+      "date": "2024-02-07",
+      "supply": 203,
+      "debt": 33
+    },
+    {
+      "date": "2024-02-08",
+      "supply": 215,
+      "debt": 48
+    },
+    {
+      "date": "2024-02-09",
+      "supply": 243,
+      "debt": 106
+    },
+    {
+      "date": "2024-02-10",
+      "supply": 207,
+      "debt": 36
+    },
+    {
+      "date": "2024-02-11",
+      "supply": 209,
+      "debt": 43
+    },
+    {
+      "date": "2024-02-12",
+      "supply": 265,
+      "debt": 112
+    },
+    {
+      "date": "2024-02-13",
+      "supply": 284,
+      "debt": 80
+    },
+    {
+      "date": "2024-02-14",
+      "supply": 195,
+      "debt": 94
+    },
+    {
+      "date": "2024-02-15",
+      "supply": 178,
+      "debt": 95
+    },
+    {
+      "date": "2024-02-16",
+      "supply": 199,
+      "debt": 111
+    },
+    {
+      "date": "2024-02-17",
+      "supply": 178,
+      "debt": 76
+    },
+    {
+      "date": "2024-02-18",
+      "supply": 155,
+      "debt": 54
+    },
+    {
+      "date": "2024-02-19",
+      "supply": 247,
+      "debt": 70
+    },
+    {
+      "date": "2024-02-20",
+      "supply": 257,
+      "debt": 87
+    },
+    {
+      "date": "2024-02-21",
+      "supply": 225,
+      "debt": 72
+    },
+    {
+      "date": "2024-02-22",
+      "supply": 269,
+      "debt": 62
+    },
+    {
+      "date": "2024-02-23",
+      "supply": 216,
+      "debt": 32
+    },
+    {
+      "date": "2024-02-24",
+      "supply": 237,
+      "debt": 33
+    },
+    {
+      "date": "2024-02-25",
+      "supply": 336,
+      "debt": 112
+    },
+    {
+      "date": "2024-02-26",
+      "supply": 261,
+      "debt": 79
+    },
+    {
+      "date": "2024-02-27",
+      "supply": 344,
+      "debt": 70
+    },
+    {
+      "date": "2024-02-28",
+      "supply": 322,
+      "debt": 101
+    },
+    {
+      "date": "2024-02-29",
+      "supply": 302,
+      "debt": 95
+    },
+    {
+      "date": "2024-03-01",
+      "supply": 229,
+      "debt": 61
+    },
+    {
+      "date": "2024-03-02",
+      "supply": 304,
+      "debt": 39
+    },
+    {
+      "date": "2024-03-03",
+      "supply": 277,
+      "debt": 30
+    },
+    {
+      "date": "2024-03-04",
+      "supply": 263,
+      "debt": 73
+    },
+    {
+      "date": "2024-03-05",
+      "supply": 250,
+      "debt": 119
+    },
+    {
+      "date": "2024-03-06",
+      "supply": 181,
+      "debt": 81
+    },
+    {
+      "date": "2024-03-07",
+      "supply": 174,
+      "debt": 77
+    },
+    {
+      "date": "2024-03-08",
+      "supply": 231,
+      "debt": 101
+    },
+    {
+      "date": "2024-03-09",
+      "supply": 247,
+      "debt": 32
+    },
+    {
+      "date": "2024-03-10",
+      "supply": 222,
+      "debt": 50
+    },
+    {
+      "date": "2024-03-11",
+      "supply": 338,
+      "debt": 88
+    },
+    {
+      "date": "2024-03-12",
+      "supply": 376,
+      "debt": 118
+    },
+    {
+      "date": "2024-03-13",
+      "supply": 257,
+      "debt": 81
+    },
+    {
+      "date": "2024-03-14",
+      "supply": 270,
+      "debt": 93
+    },
+    {
+      "date": "2024-03-15",
+      "supply": 335,
+      "debt": 83
+    },
+    {
+      "date": "2024-03-16",
+      "supply": 303,
+      "debt": 105
+    },
+    {
+      "date": "2024-03-17",
+      "supply": 192,
+      "debt": 73
+    },
+    {
+      "date": "2024-03-18",
+      "supply": 574,
+      "debt": 162
+    },
+    {
+      "date": "2024-03-19",
+      "supply": 480,
+      "debt": 200
+    },
+    {
+      "date": "2024-03-20",
+      "supply": 636,
+      "debt": 279
+    },
+    {
+      "date": "2024-03-21",
+      "supply": 430,
+      "debt": 207
+    },
+    {
+      "date": "2024-03-22",
+      "supply": 375,
+      "debt": 183
+    },
+    {
+      "date": "2024-03-23",
+      "supply": 484,
+      "debt": 115
+    },
+    {
+      "date": "2024-03-24",
+      "supply": 668,
+      "debt": 209
+    },
+    {
+      "date": "2024-03-25",
+      "supply": 491,
+      "debt": 218
+    },
+    {
+      "date": "2024-03-26",
+      "supply": 520,
+      "debt": 138
+    },
+    {
+      "date": "2024-03-27",
+      "supply": 822,
+      "debt": 154
+    },
+    {
+      "date": "2024-03-28",
+      "supply": 1044,
+      "debt": 144
+    },
+    {
+      "date": "2024-03-29",
+      "supply": 643,
+      "debt": 93
+    },
+    {
+      "date": "2024-03-30",
+      "supply": 757,
+      "debt": 173
+    },
+    {
+      "date": "2024-03-31",
+      "supply": 706,
+      "debt": 108
+    },
+    {
+      "date": "2024-04-01",
+      "supply": 604,
+      "debt": 128
+    },
+    {
+      "date": "2024-04-02",
+      "supply": 567,
+      "debt": 116
+    },
+    {
+      "date": "2024-04-03",
+      "supply": 392,
+      "debt": 79
+    },
+    {
+      "date": "2024-04-04",
+      "supply": 477,
+      "debt": 136
+    },
+    {
+      "date": "2024-04-05",
+      "supply": 643,
+      "debt": 89
+    },
+    {
+      "date": "2024-04-06",
+      "supply": 701,
+      "debt": 129
+    },
+    {
+      "date": "2024-04-07",
+      "supply": 784,
+      "debt": 118
+    },
+    {
+      "date": "2024-04-08",
+      "supply": 862,
+      "debt": 263
+    },
+    {
+      "date": "2024-04-09",
+      "supply": 558,
+      "debt": 178
+    },
+    {
+      "date": "2024-04-10",
+      "supply": 612,
+      "debt": 207
+    },
+    {
+      "date": "2024-04-11",
+      "supply": 471,
+      "debt": 133
+    },
+    {
+      "date": "2024-04-12",
+      "supply": 2181,
+      "debt": 705
+    },
+    {
+      "date": "2024-04-13",
+      "supply": 2347,
+      "debt": 684
+    },
+    {
+      "date": "2024-04-14",
+      "supply": 1053,
+      "debt": 236
+    },
+    {
+      "date": "2024-04-15",
+      "supply": 526,
+      "debt": 105
+    },
+    {
+      "date": "2024-04-16",
+      "supply": 575,
+      "debt": 133
+    },
+    {
+      "date": "2024-04-17",
+      "supply": 401,
+      "debt": 116
+    },
+    {
+      "date": "2024-04-18",
+      "supply": 687,
+      "debt": 88
+    },
+    {
+      "date": "2024-04-19",
+      "supply": 650,
+      "debt": 120
+    },
+    {
+      "date": "2024-04-20",
+      "supply": 620,
+      "debt": 69
+    },
+    {
+      "date": "2024-04-21",
+      "supply": 738,
+      "debt": 77
+    },
+    {
+      "date": "2024-04-22",
+      "supply": 780,
+      "debt": 163
+    },
+    {
+      "date": "2024-04-23",
+      "supply": 695,
+      "debt": 155
+    },
+    {
+      "date": "2024-04-24",
+      "supply": 776,
+      "debt": 168
+    },
+    {
+      "date": "2024-04-25",
+      "supply": 736,
+      "debt": 116
+    },
+    {
+      "date": "2024-04-26",
+      "supply": 810,
+      "debt": 124
+    },
+    {
+      "date": "2024-04-27",
+      "supply": 724,
+      "debt": 79
+    },
+    {
+      "date": "2024-04-28",
+      "supply": 770,
+      "debt": 93
+    },
+    {
+      "date": "2024-04-29",
+      "supply": 680,
+      "debt": 120
+    },
+    {
+      "date": "2024-04-30",
+      "supply": 669,
+      "debt": 164
+    },
+    {
+      "date": "2024-05-01",
+      "supply": 789,
+      "debt": 136
+    },
+    {
+      "date": "2024-05-02",
+      "supply": 682,
+      "debt": 75
+    },
+    {
+      "date": "2024-05-03",
+      "supply": 624,
+      "debt": 106
+    },
+    {
+      "date": "2024-05-04",
+      "supply": 664,
+      "debt": 68
+    },
+    {
+      "date": "2024-05-05",
+      "supply": 745,
+      "debt": 58
+    },
+    {
+      "date": "2024-05-06",
+      "supply": 800,
+      "debt": 120
+    },
+    {
+      "date": "2024-05-07",
+      "supply": 808,
+      "debt": 77
+    },
+    {
+      "date": "2024-05-08",
+      "supply": 1054,
+      "debt": 122
+    },
+    {
+      "date": "2024-05-09",
+      "supply": 1359,
+      "debt": 78
+    },
+    {
+      "date": "2024-05-10",
+      "supply": 1526,
+      "debt": 120
+    },
+    {
+      "date": "2024-05-11",
+      "supply": 137,
+      "debt": 32
+    },
+    {
+      "date": "2024-05-12",
+      "supply": 166,
+      "debt": 26
+    },
+    {
+      "date": "2024-05-13",
+      "supply": 208,
+      "debt": 77
+    },
+    {
+      "date": "2024-05-14",
+      "supply": 219,
+      "debt": 130
+    },
+    {
+      "date": "2024-05-15",
+      "supply": 186,
+      "debt": 103
+    },
+    {
+      "date": "2024-05-16",
+      "supply": 163,
+      "debt": 91
+    },
+    {
+      "date": "2024-05-17",
+      "supply": 225,
+      "debt": 113
+    },
+    {
+      "date": "2024-05-18",
+      "supply": 185,
+      "debt": 98
+    },
+    {
+      "date": "2024-05-19",
+      "supply": 131,
+      "debt": 49
+    },
+    {
+      "date": "2024-05-20",
+      "supply": 250,
+      "debt": 163
+    },
+    {
+      "date": "2024-05-21",
+      "supply": 338,
+      "debt": 114
+    },
+    {
+      "date": "2024-05-22",
+      "supply": 309,
+      "debt": 85
+    },
+    {
+      "date": "2024-05-23",
+      "supply": 455,
+      "debt": 292
+    },
+    {
+      "date": "2024-05-24",
+      "supply": 376,
+      "debt": 236
+    },
+    {
+      "date": "2024-05-25",
+      "supply": 189,
+      "debt": 40
+    },
+    {
+      "date": "2024-05-26",
+      "supply": 199,
+      "debt": 86
+    },
+    {
+      "date": "2024-05-27",
+      "supply": 151,
+      "debt": 53
+    },
+    {
+      "date": "2024-05-28",
+      "supply": 236,
+      "debt": 71
+    },
+    {
+      "date": "2024-05-29",
+      "supply": 200,
+      "debt": 90
+    },
+    {
+      "date": "2024-05-30",
+      "supply": 171,
+      "debt": 50
+    },
+    {
+      "date": "2024-05-31",
+      "supply": 246,
+      "debt": 100
+    },
+    {
+      "date": "2024-06-01",
+      "supply": 123,
+      "debt": 20
+    },
+    {
+      "date": "2024-06-02",
+      "supply": 159,
+      "debt": 28
+    },
+    {
+      "date": "2024-06-03",
+      "supply": 164,
+      "debt": 101
+    },
+    {
+      "date": "2024-06-04",
+      "supply": 162,
+      "debt": 57
+    },
+    {
+      "date": "2024-06-05",
+      "supply": 137,
+      "debt": 43
+    },
+    {
+      "date": "2024-06-06",
+      "supply": 155,
+      "debt": 72
+    },
+    {
+      "date": "2024-06-07",
+      "supply": 195,
+      "debt": 130
+    },
+    {
+      "date": "2024-06-08",
+      "supply": 201,
+      "debt": 54
+    },
+    {
+      "date": "2024-06-09",
+      "supply": 172,
+      "debt": 51
+    },
+    {
+      "date": "2024-06-10",
+      "supply": 265,
+      "debt": 131
+    },
+    {
+      "date": "2024-06-11",
+      "supply": 200,
+      "debt": 131
+    },
+    {
+      "date": "2024-06-12",
+      "supply": 230,
+      "debt": 154
+    },
+    {
+      "date": "2024-06-13",
+      "supply": 297,
+      "debt": 189
+    },
+    {
+      "date": "2024-06-14",
+      "supply": 276,
+      "debt": 131
+    },
+    {
+      "date": "2024-06-15",
+      "supply": 139,
+      "debt": 52
+    },
+    {
+      "date": "2024-06-16",
+      "supply": 159,
+      "debt": 53
+    },
+    {
+      "date": "2024-06-17",
+      "supply": 320,
+      "debt": 214
+    },
+    {
+      "date": "2024-06-18",
+      "supply": 215,
+      "debt": 125
+    },
+    {
+      "date": "2024-06-19",
+      "supply": 160,
+      "debt": 48
+    },
+    {
+      "date": "2024-06-20",
+      "supply": 201,
+      "debt": 97
+    },
+    {
+      "date": "2024-06-21",
+      "supply": 259,
+      "debt": 138
+    },
+    {
+      "date": "2024-06-22",
+      "supply": 110,
+      "debt": 27
+    },
+    {
+      "date": "2024-06-23",
+      "supply": 167,
+      "debt": 61
+    },
+    {
+      "date": "2024-06-24",
+      "supply": 254,
+      "debt": 112
+    },
+    {
+      "date": "2024-06-25",
+      "supply": 189,
+      "debt": 79
+    },
+    {
+      "date": "2024-06-26",
+      "supply": 178,
+      "debt": 85
+    },
+    {
+      "date": "2024-06-27",
+      "supply": 170,
+      "debt": 68
+    },
+    {
+      "date": "2024-06-28",
+      "supply": 232,
+      "debt": 77
+    },
+    {
+      "date": "2024-06-29",
+      "supply": 181,
+      "debt": 36
+    },
+    {
+      "date": "2024-06-30",
+      "supply": 172,
+      "debt": 25
+    },
+    {
+      "date": "2024-07-01",
+      "supply": 253,
+      "debt": 99
+    },
+    {
+      "date": "2024-07-02",
+      "supply": 164,
+      "debt": 37
+    },
+    {
+      "date": "2024-07-03",
+      "supply": 190,
+      "debt": 59
+    },
+    {
+      "date": "2024-07-04",
+      "supply": 277,
+      "debt": 134
+    },
+    {
+      "date": "2024-07-05",
+      "supply": 310,
+      "debt": 151
+    },
+    {
+      "date": "2024-07-06",
+      "supply": 186,
+      "debt": 51
+    },
+    {
+      "date": "2024-07-07",
+      "supply": 491,
+      "debt": 25
+    },
+    {
+      "date": "2024-07-08",
+      "supply": 507,
+      "debt": 102
+    },
+    {
+      "date": "2024-07-09",
+      "supply": 267,
+      "debt": 32
+    },
+    {
+      "date": "2024-07-10",
+      "supply": 335,
+      "debt": 34
+    },
+    {
+      "date": "2024-07-11",
+      "supply": 292,
+      "debt": 58
+    },
+    {
+      "date": "2024-07-12",
+      "supply": 222,
+      "debt": 49
+    },
+    {
+      "date": "2024-07-13",
+      "supply": 161,
+      "debt": 24
+    },
+    {
+      "date": "2024-07-14",
+      "supply": 208,
+      "debt": 43
+    },
+    {
+      "date": "2024-07-15",
+      "supply": 495,
+      "debt": 164
+    },
+    {
+      "date": "2024-07-16",
+      "supply": 315,
+      "debt": 189
+    },
+    {
+      "date": "2024-07-17",
+      "supply": 268,
+      "debt": 120
+    },
+    {
+      "date": "2024-07-18",
+      "supply": 778,
+      "debt": 128
+    },
+    {
+      "date": "2024-07-19",
+      "supply": 352,
+      "debt": 57
+    },
+    {
+      "date": "2024-07-20",
+      "supply": 246,
+      "debt": 44
+    },
+    {
+      "date": "2024-07-21",
+      "supply": 323,
+      "debt": 43
+    },
+    {
+      "date": "2024-07-22",
+      "supply": 333,
+      "debt": 64
+    },
+    {
+      "date": "2024-07-23",
+      "supply": 201,
+      "debt": 93
+    },
+    {
+      "date": "2024-07-24",
+      "supply": 191,
+      "debt": 68
+    },
+    {
+      "date": "2024-07-25",
+      "supply": 194,
+      "debt": 99
+    },
+    {
+      "date": "2024-07-26",
+      "supply": 94,
+      "debt": 73
+    },
+    {
+      "date": "2024-07-27",
+      "supply": 109,
+      "debt": 38
+    },
+    {
+      "date": "2024-07-28",
+      "supply": 108,
+      "debt": 29
+    },
+    {
+      "date": "2024-07-29",
+      "supply": 126,
+      "debt": 94
+    },
+    {
+      "date": "2024-07-30",
+      "supply": 178,
+      "debt": 112
+    },
+    {
+      "date": "2024-07-31",
+      "supply": 166,
+      "debt": 70
+    },
+    {
+      "date": "2024-08-01",
+      "supply": 230,
+      "debt": 128
+    },
+    {
+      "date": "2024-08-02",
+      "supply": 173,
+      "debt": 73
+    },
+    {
+      "date": "2024-08-03",
+      "supply": 155,
+      "debt": 50
+    },
+    {
+      "date": "2024-08-04",
+      "supply": 159,
+      "debt": 67
+    },
+    {
+      "date": "2024-08-05",
+      "supply": 648,
+      "debt": 285
+    },
+    {
+      "date": "2024-08-06",
+      "supply": 165,
+      "debt": 74
+    },
+    {
+      "date": "2024-08-07",
+      "supply": 180,
+      "debt": 100
+    },
+    {
+      "date": "2024-08-08",
+      "supply": 175,
+      "debt": 115
+    },
+    {
+      "date": "2024-08-09",
+      "supply": 149,
+      "debt": 87
+    },
+    {
+      "date": "2024-08-10",
+      "supply": 94,
+      "debt": 45
+    },
+    {
+      "date": "2024-08-11",
+      "supply": 143,
+      "debt": 59
+    },
+    {
+      "date": "2024-08-12",
+      "supply": 130,
+      "debt": 74
+    },
+    {
+      "date": "2024-08-13",
+      "supply": 167,
+      "debt": 92
+    },
+    {
+      "date": "2024-08-14",
+      "supply": 164,
+      "debt": 98
+    },
+    {
+      "date": "2024-08-15",
+      "supply": 129,
+      "debt": 78
+    },
+    {
+      "date": "2024-08-16",
+      "supply": 142,
+      "debt": 30
+    },
+    {
+      "date": "2024-08-17",
+      "supply": 69,
+      "debt": 22
+    },
+    {
+      "date": "2024-08-18",
+      "supply": 136,
+      "debt": 60
+    },
+    {
+      "date": "2024-08-19",
+      "supply": 190,
+      "debt": 103
+    },
+    {
+      "date": "2024-08-20",
+      "supply": 183,
+      "debt": 66
+    },
+    {
+      "date": "2024-08-21",
+      "supply": 123,
+      "debt": 57
+    },
+    {
+      "date": "2024-08-22",
+      "supply": 118,
+      "debt": 24
+    },
+    {
+      "date": "2024-08-23",
+      "supply": 146,
+      "debt": 74
+    },
+    {
+      "date": "2024-08-24",
+      "supply": 133,
+      "debt": 51
+    },
+    {
+      "date": "2024-08-25",
+      "supply": 115,
+      "debt": 24
+    },
+    {
+      "date": "2024-08-26",
+      "supply": 92,
+      "debt": 35
+    },
+    {
+      "date": "2024-08-27",
+      "supply": 182,
+      "debt": 87
+    },
+    {
+      "date": "2024-08-28",
+      "supply": 117,
+      "debt": 50
+    },
+    {
+      "date": "2024-08-29",
+      "supply": 106,
+      "debt": 38
+    },
+    {
+      "date": "2024-08-30",
+      "supply": 124,
+      "debt": 98
+    },
+    {
+      "date": "2024-08-31",
+      "supply": 104,
+      "debt": 52
+    },
+    {
+      "date": "2024-09-01",
+      "supply": 96,
+      "debt": 62
+    },
+    {
+      "date": "2024-09-02",
+      "supply": 105,
+      "debt": 41
+    },
+    {
+      "date": "2024-09-03",
+      "supply": 120,
+      "debt": 79
+    },
+    {
+      "date": "2024-09-04",
+      "supply": 136,
+      "debt": 82
+    },
+    {
+      "date": "2024-09-05",
+      "supply": 156,
+      "debt": 56
+    },
+    {
+      "date": "2024-09-06",
+      "supply": 179,
+      "debt": 96
+    },
+    {
+      "date": "2024-09-07",
+      "supply": 66,
+      "debt": 36
+    },
+    {
+      "date": "2024-09-08",
+      "supply": 106,
+      "debt": 42
+    },
+    {
+      "date": "2024-09-09",
+      "supply": 94,
+      "debt": 45
+    },
+    {
+      "date": "2024-09-10",
+      "supply": 129,
+      "debt": 80
+    },
+    {
+      "date": "2024-09-11",
+      "supply": 90,
+      "debt": 64
+    },
+    {
+      "date": "2024-09-12",
+      "supply": 83,
+      "debt": 40
+    },
+    {
+      "date": "2024-09-13",
+      "supply": 138,
+      "debt": 57
+    },
+    {
+      "date": "2024-09-14",
+      "supply": 61,
+      "debt": 34
+    },
+    {
+      "date": "2024-09-15",
+      "supply": 55,
+      "debt": 46
+    },
+    {
+      "date": "2024-09-16",
+      "supply": 100,
+      "debt": 61
+    },
+    {
+      "date": "2024-09-17",
+      "supply": 164,
+      "debt": 91
+    },
+    {
+      "date": "2024-09-18",
+      "supply": 114,
+      "debt": 68
+    },
+    {
+      "date": "2024-09-19",
+      "supply": 119,
+      "debt": 74
+    },
+    {
+      "date": "2024-09-20",
+      "supply": 139,
+      "debt": 77
+    },
+    {
+      "date": "2024-09-21",
+      "supply": 81,
+      "debt": 27
+    },
+    {
+      "date": "2024-09-22",
+      "supply": 110,
+      "debt": 69
+    },
+    {
+      "date": "2024-09-23",
+      "supply": 187,
+      "debt": 113
+    },
+    {
+      "date": "2024-09-24",
+      "supply": 211,
+      "debt": 117
+    },
+    {
+      "date": "2024-09-25",
+      "supply": 110,
+      "debt": 45
+    },
+    {
+      "date": "2024-09-26",
+      "supply": 207,
+      "debt": 85
+    },
+    {
+      "date": "2024-09-27",
+      "supply": 296,
+      "debt": 77
+    },
+    {
+      "date": "2024-09-28",
+      "supply": 241,
+      "debt": 59
+    },
+    {
+      "date": "2024-09-29",
+      "supply": 181,
+      "debt": 38
+    },
+    {
+      "date": "2024-09-30",
+      "supply": 227,
+      "debt": 49
+    },
+    {
+      "date": "2024-10-01",
+      "supply": 221,
+      "debt": 97
+    },
+    {
+      "date": "2024-10-02",
+      "supply": 261,
+      "debt": 88
+    },
+    {
+      "date": "2024-10-03",
+      "supply": 241,
+      "debt": 91
+    },
+    {
+      "date": "2024-10-04",
+      "supply": 245,
+      "debt": 52
+    },
+    {
+      "date": "2024-10-05",
+      "supply": 171,
+      "debt": 33
+    },
+    {
+      "date": "2024-10-06",
+      "supply": 213,
+      "debt": 17
+    },
+    {
+      "date": "2024-10-07",
+      "supply": 245,
+      "debt": 49
+    },
+    {
+      "date": "2024-10-08",
+      "supply": 298,
+      "debt": 84
+    },
+    {
+      "date": "2024-10-09",
+      "supply": 292,
+      "debt": 53
+    },
+    {
+      "date": "2024-10-10",
+      "supply": 264,
+      "debt": 68
+    },
+    {
+      "date": "2024-10-11",
+      "supply": 247,
+      "debt": 53
+    },
+    {
+      "date": "2024-10-12",
+      "supply": 204,
+      "debt": 32
+    },
+    {
+      "date": "2024-10-13",
+      "supply": 201,
+      "debt": 44
+    },
+    {
+      "date": "2024-10-14",
+      "supply": 307,
+      "debt": 91
+    },
+    {
+      "date": "2024-10-15",
+      "supply": 269,
+      "debt": 117
+    },
+    {
+      "date": "2024-10-16",
+      "supply": 375,
+      "debt": 107
+    },
+    {
+      "date": "2024-10-17",
+      "supply": 320,
+      "debt": 51
+    },
+    {
+      "date": "2024-10-18",
+      "supply": 360,
+      "debt": 75
+    },
+    {
+      "date": "2024-10-19",
+      "supply": 274,
+      "debt": 32
+    },
+    {
+      "date": "2024-10-20",
+      "supply": 316,
+      "debt": 52
+    },
+    {
+      "date": "2024-10-21",
+      "supply": 378,
+      "debt": 88
+    },
+    {
+      "date": "2024-10-22",
+      "supply": 384,
+      "debt": 74
+    },
+    {
+      "date": "2024-10-23",
+      "supply": 391,
+      "debt": 50
+    },
+    {
+      "date": "2024-10-24",
+      "supply": 534,
+      "debt": 190
+    },
+    {
+      "date": "2024-10-25",
+      "supply": 454,
+      "debt": 200
+    },
+    {
+      "date": "2024-10-26",
+      "supply": 331,
+      "debt": 80
+    },
+    {
+      "date": "2024-10-27",
+      "supply": 372,
+      "debt": 125
+    },
+    {
+      "date": "2024-10-28",
+      "supply": 431,
+      "debt": 127
+    },
+    {
+      "date": "2024-10-29",
+      "supply": 401,
+      "debt": 106
+    },
+    {
+      "date": "2024-10-30",
+      "supply": 410,
+      "debt": 118
+    },
+    {
+      "date": "2024-10-31",
+      "supply": 326,
+      "debt": 91
+    },
+    {
+      "date": "2024-11-01",
+      "supply": 355,
+      "debt": 40
+    },
+    {
+      "date": "2024-11-02",
+      "supply": 258,
+      "debt": 37
+    },
+    {
+      "date": "2024-11-03",
+      "supply": 311,
+      "debt": 46
+    },
+    {
+      "date": "2024-11-04",
+      "supply": 342,
+      "debt": 32
+    },
+    {
+      "date": "2024-11-05",
+      "supply": 403,
+      "debt": 45
+    },
+    {
+      "date": "2024-11-06",
+      "supply": 491,
+      "debt": 201
+    },
+    {
+      "date": "2024-11-07",
+      "supply": 450,
+      "debt": 107
+    },
+    {
+      "date": "2024-11-08",
+      "supply": 681,
+      "debt": 78
+    },
+    {
+      "date": "2024-11-09",
+      "supply": 647,
+      "debt": 86
+    },
+    {
+      "date": "2024-11-10",
+      "supply": 642,
+      "debt": 101
+    },
+    {
+      "date": "2024-11-11",
+      "supply": 632,
+      "debt": 174
+    },
+    {
+      "date": "2024-11-12",
+      "supply": 411,
+      "debt": 136
+    },
+    {
+      "date": "2024-11-13",
+      "supply": 475,
+      "debt": 147
+    },
+    {
+      "date": "2024-11-14",
+      "supply": 318,
+      "debt": 121
+    },
+    {
+      "date": "2024-11-15",
+      "supply": 512,
+      "debt": 106
+    },
+    {
+      "date": "2024-11-16",
+      "supply": 445,
+      "debt": 67
+    },
+    {
+      "date": "2024-11-17",
+      "supply": 278,
+      "debt": 59
+    },
+    {
+      "date": "2024-11-18",
+      "supply": 390,
+      "debt": 113
+    },
+    {
+      "date": "2024-11-19",
+      "supply": 354,
+      "debt": 95
+    },
+    {
+      "date": "2024-11-20",
+      "supply": 332,
+      "debt": 97
+    },
+    {
+      "date": "2024-11-21",
+      "supply": 679,
+      "debt": 153
+    },
+    {
+      "date": "2024-11-22",
+      "supply": 655,
+      "debt": 69
+    },
+    {
+      "date": "2024-11-23",
+      "supply": 394,
+      "debt": 88
+    },
+    {
+      "date": "2024-11-24",
+      "supply": 320,
+      "debt": 79
+    },
+    {
+      "date": "2024-11-25",
+      "supply": 461,
+      "debt": 145
+    },
+    {
+      "date": "2024-11-26",
+      "supply": 431,
+      "debt": 121
+    },
+    {
+      "date": "2024-11-27",
+      "supply": 408,
+      "debt": 168
+    },
+    {
+      "date": "2024-11-28",
+      "supply": 418,
+      "debt": 67
+    },
+    {
+      "date": "2024-11-29",
+      "supply": 517,
+      "debt": 133
+    },
+    {
+      "date": "2024-11-30",
+      "supply": 652,
+      "debt": 187
+    },
+    {
+      "date": "2024-12-01",
+      "supply": 582,
+      "debt": 150
+    },
+    {
+      "date": "2024-12-02",
+      "supply": 760,
+      "debt": 328
+    },
+    {
+      "date": "2024-12-03",
+      "supply": 784,
+      "debt": 254
+    },
+    {
+      "date": "2024-12-04",
+      "supply": 744,
+      "debt": 384
+    },
+    {
+      "date": "2024-12-05",
+      "supply": 415,
+      "debt": 148
+    },
+    {
+      "date": "2024-12-06",
+      "supply": 792,
+      "debt": 113
+    },
+    {
+      "date": "2024-12-07",
+      "supply": 506,
+      "debt": 68
+    },
+    {
+      "date": "2024-12-08",
+      "supply": 365,
+      "debt": 44
+    },
+    {
+      "date": "2024-12-09",
+      "supply": 828,
+      "debt": 330
+    },
+    {
+      "date": "2024-12-10",
+      "supply": 878,
+      "debt": 182
+    },
+    {
+      "date": "2024-12-11",
+      "supply": 1079,
+      "debt": 276
+    },
+    {
+      "date": "2024-12-12",
+      "supply": 1065,
+      "debt": 254
+    },
+    {
+      "date": "2024-12-13",
+      "supply": 606,
+      "debt": 185
+    },
+    {
+      "date": "2024-12-14",
+      "supply": 570,
+      "debt": 173
+    },
+    {
+      "date": "2024-12-15",
+      "supply": 881,
+      "debt": 75
+    },
+    {
+      "date": "2024-12-16",
+      "supply": 962,
+      "debt": 252
+    },
+    {
+      "date": "2024-12-17",
+      "supply": 642,
+      "debt": 136
+    },
+    {
+      "date": "2024-12-18",
+      "supply": 788,
+      "debt": 152
+    },
+    {
+      "date": "2024-12-19",
+      "supply": 940,
+      "debt": 282
+    },
+    {
+      "date": "2024-12-20",
+      "supply": 883,
+      "debt": 296
+    },
+    {
+      "date": "2024-12-21",
+      "supply": 704,
+      "debt": 112
+    },
+    {
+      "date": "2024-12-22",
+      "supply": 884,
+      "debt": 102
+    },
+    {
+      "date": "2024-12-23",
+      "supply": 644,
+      "debt": 105
+    },
+    {
+      "date": "2024-12-24",
+      "supply": 477,
+      "debt": 54
+    },
+    {
+      "date": "2024-12-25",
+      "supply": 267,
+      "debt": 34
+    },
+    {
+      "date": "2024-12-26",
+      "supply": 536,
+      "debt": 62
+    },
+    {
+      "date": "2024-12-27",
+      "supply": 570,
+      "debt": 49
+    },
+    {
+      "date": "2024-12-28",
+      "supply": 829,
+      "debt": 25
+    },
+    {
+      "date": "2024-12-29",
+      "supply": 582,
+      "debt": 57
+    },
+    {
+      "date": "2024-12-30",
+      "supply": 833,
+      "debt": 39
+    },
+    {
+      "date": "2024-12-31",
+      "supply": 675,
+      "debt": 75
+    },
+    {
+      "date": "2025-01-01",
+      "supply": 573,
+      "debt": 75
+    },
+    {
+      "date": "2025-01-02",
+      "supply": 948,
+      "debt": 72
+    },
+    {
+      "date": "2025-01-03",
+      "supply": 888,
+      "debt": 106
+    },
+    {
+      "date": "2025-01-04",
+      "supply": 1011,
+      "debt": 88
+    },
+    {
+      "date": "2025-01-05",
+      "supply": 474,
+      "debt": 63
+    },
+    {
+      "date": "2025-01-06",
+      "supply": 1003,
+      "debt": 155
+    },
+    {
+      "date": "2025-01-07",
+      "supply": 1070,
+      "debt": 168
+    },
+    {
+      "date": "2025-01-08",
+      "supply": 894,
+      "debt": 140
+    },
+    {
+      "date": "2025-01-09",
+      "supply": 958,
+      "debt": 136
+    },
+    {
+      "date": "2025-01-10",
+      "supply": 882,
+      "debt": 76
+    },
+    {
+      "date": "2025-01-11",
+      "supply": 661,
+      "debt": 45
+    },
+    {
+      "date": "2025-01-12",
+      "supply": 577,
+      "debt": 47
+    },
+    {
+      "date": "2025-01-13",
+      "supply": 1079,
+      "debt": 167
+    },
+    {
+      "date": "2025-01-14",
+      "supply": 814,
+      "debt": 69
+    },
+    {
+      "date": "2025-01-15",
+      "supply": 907,
+      "debt": 164
+    },
+    {
+      "date": "2025-01-16",
+      "supply": 742,
+      "debt": 70
+    },
+    {
+      "date": "2025-01-17",
+      "supply": 972,
+      "debt": 154
+    },
+    {
+      "date": "2025-01-18",
+      "supply": 894,
+      "debt": 116
+    },
+    {
+      "date": "2025-01-19",
+      "supply": 1182,
+      "debt": 212
+    },
+    {
+      "date": "2025-01-20",
+      "supply": 1270,
+      "debt": 211
+    },
+    {
+      "date": "2025-01-21",
+      "supply": 844,
+      "debt": 69
+    },
+    {
+      "date": "2025-01-22",
+      "supply": 1013,
+      "debt": 59
+    },
+    {
+      "date": "2025-01-23",
+      "supply": 969,
+      "debt": 87
+    },
+    {
+      "date": "2025-01-24",
+      "supply": 1112,
+      "debt": 139
+    },
+    {
+      "date": "2025-01-25",
+      "supply": 1307,
+      "debt": 80
+    },
+    {
+      "date": "2025-01-26",
+      "supply": 846,
+      "debt": 58
+    },
+    {
+      "date": "2025-01-27",
+      "supply": 1350,
+      "debt": 123
+    },
+    {
+      "date": "2025-01-28",
+      "supply": 942,
+      "debt": 85
+    },
+    {
+      "date": "2025-01-29",
+      "supply": 1076,
+      "debt": 50
+    },
+    {
+      "date": "2025-01-30",
+      "supply": 1223,
+      "debt": 75
+    },
+    {
+      "date": "2025-01-31",
+      "supply": 1273,
+      "debt": 99
+    },
+    {
+      "date": "2025-02-01",
+      "supply": 1259,
+      "debt": 88
+    },
+    {
+      "date": "2025-02-02",
+      "supply": 1539,
+      "debt": 231
+    },
+    {
+      "date": "2025-02-03",
+      "supply": 3663,
+      "debt": 589
+    },
+    {
+      "date": "2025-02-04",
+      "supply": 2140,
+      "debt": 164
+    },
+    {
+      "date": "2025-02-05",
+      "supply": 1228,
+      "debt": 87
+    },
+    {
+      "date": "2025-02-06",
+      "supply": 1237,
+      "debt": 105
+    },
+    {
+      "date": "2025-02-07",
+      "supply": 1218,
+      "debt": 101
+    },
+    {
+      "date": "2025-02-08",
+      "supply": 1125,
+      "debt": 78
+    },
+    {
+      "date": "2025-02-09",
+      "supply": 883,
+      "debt": 86
+    },
+    {
+      "date": "2025-02-10",
+      "supply": 1171,
+      "debt": 97
+    },
+    {
+      "date": "2025-02-11",
+      "supply": 1767,
+      "debt": 93
+    },
+    {
+      "date": "2025-02-12",
+      "supply": 1985,
+      "debt": 135
+    },
+    {
+      "date": "2025-02-13",
+      "supply": 2128,
+      "debt": 94
+    },
+    {
+      "date": "2025-02-14",
+      "supply": 2255,
+      "debt": 106
+    },
+    {
+      "date": "2025-02-15",
+      "supply": 1695,
+      "debt": 51
+    },
+    {
+      "date": "2025-02-16",
+      "supply": 1737,
+      "debt": 25
+    },
+    {
+      "date": "2025-02-17",
+      "supply": 2119,
+      "debt": 124
+    },
+    {
+      "date": "2025-02-18",
+      "supply": 1971,
+      "debt": 87
+    },
+    {
+      "date": "2025-02-19",
+      "supply": 3995,
+      "debt": 173
+    },
+    {
+      "date": "2025-02-20",
+      "supply": 2175,
+      "debt": 79
+    },
+    {
+      "date": "2025-02-21",
+      "supply": 2584,
+      "debt": 101
+    },
+    {
+      "date": "2025-02-22",
+      "supply": 2107,
+      "debt": 62
+    },
+    {
+      "date": "2025-02-23",
+      "supply": 1939,
+      "debt": 60
+    },
+    {
+      "date": "2025-02-24",
+      "supply": 2742,
+      "debt": 200
+    },
+    {
+      "date": "2025-02-25",
+      "supply": 4378,
+      "debt": 479
+    },
+    {
+      "date": "2025-02-26",
+      "supply": 4389,
+      "debt": 746
+    },
+    {
+      "date": "2025-02-27",
+      "supply": 2661,
+      "debt": 117
+    },
+    {
+      "date": "2025-02-28",
+      "supply": 3707,
+      "debt": 358
+    },
+    {
+      "date": "2025-03-01",
+      "supply": 2540,
+      "debt": 85
+    },
+    {
+      "date": "2025-03-02",
+      "supply": 3078,
+      "debt": 180
+    },
+    {
+      "date": "2025-03-03",
+      "supply": 2451,
+      "debt": 247
+    },
+    {
+      "date": "2025-03-04",
+      "supply": 3065,
+      "debt": 296
+    },
+    {
+      "date": "2025-03-05",
+      "supply": 2230,
+      "debt": 93
+    },
+    {
+      "date": "2025-03-06",
+      "supply": 2143,
+      "debt": 83
+    },
+    {
+      "date": "2025-03-07",
+      "supply": 2335,
+      "debt": 82
+    },
+    {
+      "date": "2025-03-08",
+      "supply": 2075,
+      "debt": 55
+    },
+    {
+      "date": "2025-03-09",
+      "supply": 2603,
+      "debt": 217
+    },
+    {
+      "date": "2025-03-10",
+      "supply": 4944,
+      "debt": 756
+    },
+    {
+      "date": "2025-03-11",
+      "supply": 3525,
+      "debt": 419
+    },
+    {
+      "date": "2025-03-12",
+      "supply": 2110,
+      "debt": 98
+    },
+    {
+      "date": "2025-03-13",
+      "supply": 2100,
+      "debt": 127
+    },
+    {
+      "date": "2025-03-14",
+      "supply": 2065,
+      "debt": 76
+    },
+    {
+      "date": "2025-03-15",
+      "supply": 2000,
+      "debt": 45
+    },
+    {
+      "date": "2025-03-16",
+      "supply": 1833,
+      "debt": 57
+    },
+    {
+      "date": "2025-03-17",
+      "supply": 1806,
+      "debt": 89
+    },
+    {
+      "date": "2025-03-18",
+      "supply": 1939,
+      "debt": 108
+    },
+    {
+      "date": "2025-03-19",
+      "supply": 2174,
+      "debt": 108
+    },
+    {
+      "date": "2025-03-20",
+      "supply": 1747,
+      "debt": 55
+    },
+    {
+      "date": "2025-03-21",
+      "supply": 2016,
+      "debt": 78
+    },
+    {
+      "date": "2025-03-22",
+      "supply": 1779,
+      "debt": 33
+    },
+    {
+      "date": "2025-03-23",
+      "supply": 1682,
+      "debt": 44
+    },
+    {
+      "date": "2025-03-24",
+      "supply": 1954,
+      "debt": 78
+    },
+    {
+      "date": "2025-03-25",
+      "supply": 1877,
+      "debt": 49
+    },
+    {
+      "date": "2025-03-26",
+      "supply": 2218,
+      "debt": 56
+    },
+    {
+      "date": "2025-03-27",
+      "supply": 2091,
+      "debt": 60
+    },
+    {
+      "date": "2025-03-28",
+      "supply": 1811,
+      "debt": 148
+    },
+    {
+      "date": "2025-03-29",
+      "supply": 1190,
+      "debt": 82
+    },
+    {
+      "date": "2025-03-30",
+      "supply": 1161,
+      "debt": 68
+    },
+    {
+      "date": "2025-03-31",
+      "supply": 1734,
+      "debt": 162
+    },
+    {
+      "date": "2025-04-01",
+      "supply": 1470,
+      "debt": 102
+    },
+    {
+      "date": "2025-04-02",
+      "supply": 1329,
+      "debt": 73
+    },
+    {
+      "date": "2025-04-03",
+      "supply": 1565,
+      "debt": 76
+    },
+    {
+      "date": "2025-04-04",
+      "supply": 1657,
+      "debt": 64
+    },
+    {
+      "date": "2025-04-05",
+      "supply": 941,
+      "debt": 35
+    },
+    {
+      "date": "2025-04-06",
+      "supply": 1548,
+      "debt": 176
+    },
+    {
+      "date": "2025-04-07",
+      "supply": 2809,
+      "debt": 183
+    },
+    {
+      "date": "2025-04-08",
+      "supply": 1921,
+      "debt": 120
+    },
+    {
+      "date": "2025-04-09",
+      "supply": 2089,
+      "debt": 219
+    },
+    {
+      "date": "2025-04-10",
+      "supply": 1832,
+      "debt": 129
+    },
+    {
+      "date": "2025-04-11",
+      "supply": 1642,
+      "debt": 73
+    },
+    {
+      "date": "2025-04-12",
+      "supply": 1353,
+      "debt": 94
+    },
+    {
+      "date": "2025-04-13",
+      "supply": 1949,
+      "debt": 69
+    },
+    {
+      "date": "2025-04-14",
+      "supply": 1499,
+      "debt": 111
+    },
+    {
+      "date": "2025-04-15",
+      "supply": 1350,
+      "debt": 122
+    },
+    {
+      "date": "2025-04-16",
+      "supply": 1616,
+      "debt": 110
+    },
+    {
+      "date": "2025-04-17",
+      "supply": 1502,
+      "debt": 55
+    },
+    {
+      "date": "2025-04-18",
+      "supply": 1201,
+      "debt": 77
+    },
+    {
+      "date": "2025-04-19",
+      "supply": 995,
+      "debt": 49
+    },
+    {
+      "date": "2025-04-20",
+      "supply": 865,
+      "debt": 50
+    },
+    {
+      "date": "2025-04-21",
+      "supply": 1220,
+      "debt": 108
+    },
+    {
+      "date": "2025-04-22",
+      "supply": 1865,
+      "debt": 181
+    },
+    {
+      "date": "2025-04-23",
+      "supply": 1548,
+      "debt": 99
+    },
+    {
+      "date": "2025-04-24",
+      "supply": 1205,
+      "debt": 70
+    },
+    {
+      "date": "2025-04-25",
+      "supply": 1502,
+      "debt": 117
+    },
+    {
+      "date": "2025-04-26",
+      "supply": 1409,
+      "debt": 58
+    },
+    {
+      "date": "2025-04-27",
+      "supply": 1121,
+      "debt": 87
+    },
+    {
+      "date": "2025-04-28",
+      "supply": 1332,
+      "debt": 70
+    },
+    {
+      "date": "2025-04-29",
+      "supply": 1680,
+      "debt": 95
+    },
+    {
+      "date": "2025-04-30",
+      "supply": 1708,
+      "debt": 81
+    },
+    {
+      "date": "2025-05-01",
+      "supply": 3679,
+      "debt": 119
+    },
+    {
+      "date": "2025-05-02",
+      "supply": 2192,
+      "debt": 92
+    },
+    {
+      "date": "2025-05-03",
+      "supply": 1693,
+      "debt": 57
+    },
+    {
+      "date": "2025-05-04",
+      "supply": 1332,
+      "debt": 77
+    },
+    {
+      "date": "2025-05-05",
+      "supply": 1627,
+      "debt": 97
+    },
+    {
+      "date": "2025-05-06",
+      "supply": 1885,
+      "debt": 54
+    },
+    {
+      "date": "2025-05-07",
+      "supply": 1833,
+      "debt": 99
+    },
+    {
+      "date": "2025-05-08",
+      "supply": 2977,
+      "debt": 219
+    },
+    {
+      "date": "2025-05-09",
+      "supply": 2896,
+      "debt": 173
+    },
+    {
+      "date": "2025-05-10",
+      "supply": 3021,
+      "debt": 156
+    },
+    {
+      "date": "2025-05-11",
+      "supply": 1931,
+      "debt": 139
+    },
+    {
+      "date": "2025-05-12",
+      "supply": 2198,
+      "debt": 130
+    },
+    {
+      "date": "2025-05-13",
+      "supply": 2127,
+      "debt": 124
+    },
+    {
+      "date": "2025-05-14",
+      "supply": 2559,
+      "debt": 84
+    },
+    {
+      "date": "2025-05-15",
+      "supply": 2397,
+      "debt": 157
+    },
+    {
+      "date": "2025-05-16",
+      "supply": 1904,
+      "debt": 76
+    },
+    {
+      "date": "2025-05-17",
+      "supply": 1906,
+      "debt": 54
+    },
+    {
+      "date": "2025-05-18",
+      "supply": 2003,
+      "debt": 80
+    },
+    {
+      "date": "2025-05-19",
+      "supply": 2207,
+      "debt": 102
+    },
+    {
+      "date": "2025-05-20",
+      "supply": 2361,
+      "debt": 77
+    },
+    {
+      "date": "2025-05-21",
+      "supply": 2651,
+      "debt": 106
+    },
+    {
+      "date": "2025-05-22",
+      "supply": 2325,
+      "debt": 84
+    },
+    {
+      "date": "2025-05-23",
+      "supply": 2479,
+      "debt": 86
+    },
+    {
+      "date": "2025-05-24",
+      "supply": 1742,
+      "debt": 42
+    },
+    {
+      "date": "2025-05-25",
+      "supply": 1934,
+      "debt": 83
+    },
+    {
+      "date": "2025-05-26",
+      "supply": 1748,
+      "debt": 51
+    },
+    {
+      "date": "2025-05-27",
+      "supply": 1933,
+      "debt": 83
+    },
+    {
+      "date": "2025-05-28",
+      "supply": 2122,
+      "debt": 102
+    },
+    {
+      "date": "2025-05-29",
+      "supply": 2354,
+      "debt": 102
+    },
+    {
+      "date": "2025-05-30",
+      "supply": 3249,
+      "debt": 79
+    },
+    {
+      "date": "2025-05-31",
+      "supply": 2386,
+      "debt": 90
+    },
+    {
+      "date": "2025-06-01",
+      "supply": 1956,
+      "debt": 56
+    },
+    {
+      "date": "2025-06-02",
+      "supply": 2354,
+      "debt": 108
+    },
+    {
+      "date": "2025-06-03",
+      "supply": 2345,
+      "debt": 64
+    },
+    {
+      "date": "2025-06-04",
+      "supply": 2153,
+      "debt": 49
+    },
+    {
+      "date": "2025-06-05",
+      "supply": 2199,
+      "debt": 93
+    },
+    {
+      "date": "2025-06-06",
+      "supply": 1953,
+      "debt": 70
+    },
+    {
+      "date": "2025-06-07",
+      "supply": 2577,
+      "debt": 55
+    },
+    {
+      "date": "2025-06-08",
+      "supply": 3285,
+      "debt": 81
+    },
+    {
+      "date": "2025-06-09",
+      "supply": 4693,
+      "debt": 85
+    },
+    {
+      "date": "2025-06-10",
+      "supply": 4294,
+      "debt": 84
+    },
+    {
+      "date": "2025-06-11",
+      "supply": 4052,
+      "debt": 85
+    },
+    {
+      "date": "2025-06-12",
+      "supply": 4508,
+      "debt": 149
+    },
+    {
+      "date": "2025-06-13",
+      "supply": 4424,
+      "debt": 137
+    },
+    {
+      "date": "2025-06-14",
+      "supply": 4222,
+      "debt": 56
+    },
+    {
+      "date": "2025-06-15",
+      "supply": 3727,
+      "debt": 52
+    },
+    {
+      "date": "2025-06-16",
+      "supply": 4316,
+      "debt": 82
+    },
+    {
+      "date": "2025-06-17",
+      "supply": 4005,
+      "debt": 84
+    },
+    {
+      "date": "2025-06-18",
+      "supply": 3528,
+      "debt": 64
+    },
+    {
+      "date": "2025-06-19",
+      "supply": 3063,
+      "debt": 42
+    },
+    {
+      "date": "2025-06-20",
+      "supply": 4572,
+      "debt": 73
+    },
+    {
+      "date": "2025-06-21",
+      "supply": 4403,
+      "debt": 116
+    },
+    {
+      "date": "2025-06-22",
+      "supply": 4759,
+      "debt": 120
+    },
+    {
+      "date": "2025-06-23",
+      "supply": 4473,
+      "debt": 113
+    },
+    {
+      "date": "2025-06-24",
+      "supply": 4700,
+      "debt": 96
+    },
+    {
+      "date": "2025-06-25",
+      "supply": 4710,
+      "debt": 44
+    },
+    {
+      "date": "2025-06-26",
+      "supply": 4855,
+      "debt": 124
+    },
+    {
+      "date": "2025-06-27",
+      "supply": 4816,
+      "debt": 83
+    },
+    {
+      "date": "2025-06-28",
+      "supply": 4512,
+      "debt": 53
+    },
+    {
+      "date": "2025-06-29",
+      "supply": 4271,
+      "debt": 61
+    },
+    {
+      "date": "2025-06-30",
+      "supply": 4885,
+      "debt": 121
+    },
+    {
+      "date": "2025-07-01",
+      "supply": 4740,
+      "debt": 97
+    },
+    {
+      "date": "2025-07-02",
+      "supply": 5268,
+      "debt": 94
+    },
+    {
+      "date": "2025-07-03",
+      "supply": 5088,
+      "debt": 59
+    },
+    {
+      "date": "2025-07-04",
+      "supply": 4858,
+      "debt": 58
+    },
+    {
+      "date": "2025-07-05",
+      "supply": 4768,
+      "debt": 41
+    },
+    {
+      "date": "2025-07-06",
+      "supply": 4471,
+      "debt": 48
+    },
+    {
+      "date": "2025-07-07",
+      "supply": 4564,
+      "debt": 51
+    },
+    {
+      "date": "2025-07-08",
+      "supply": 3824,
+      "debt": 60
+    },
+    {
+      "date": "2025-07-09",
+      "supply": 4786,
+      "debt": 154
+    },
+    {
+      "date": "2025-07-10",
+      "supply": 4817,
+      "debt": 139
+    },
+    {
+      "date": "2025-07-11",
+      "supply": 4879,
+      "debt": 112
+    },
+    {
+      "date": "2025-07-12",
+      "supply": 4610,
+      "debt": 49
+    },
+    {
+      "date": "2025-07-13",
+      "supply": 4215,
+      "debt": 50
+    },
+    {
+      "date": "2025-07-14",
+      "supply": 5076,
+      "debt": 84
+    },
+    {
+      "date": "2025-07-15",
+      "supply": 5706,
+      "debt": 164
+    },
+    {
+      "date": "2025-07-16",
+      "supply": 5042,
+      "debt": 195
+    },
+    {
+      "date": "2025-07-17",
+      "supply": 4863,
+      "debt": 162
+    },
+    {
+      "date": "2025-07-18",
+      "supply": 5182,
+      "debt": 176
+    },
+    {
+      "date": "2025-07-19",
+      "supply": 4442,
+      "debt": 54
+    },
+    {
+      "date": "2025-07-20",
+      "supply": 4609,
+      "debt": 190
+    },
+    {
+      "date": "2025-07-21",
+      "supply": 4594,
+      "debt": 85
+    },
+    {
+      "date": "2025-07-22",
+      "supply": 3903,
+      "debt": 104
+    },
+    {
+      "date": "2025-07-23",
+      "supply": 4518,
+      "debt": 91
+    },
+    {
+      "date": "2025-07-24",
+      "supply": 4787,
+      "debt": 159
+    },
+    {
+      "date": "2025-07-25",
+      "supply": 4527,
+      "debt": 82
+    },
+    {
+      "date": "2025-07-26",
+      "supply": 5037,
+      "debt": 70
+    },
+    {
+      "date": "2025-07-27",
+      "supply": 4384,
+      "debt": 70
+    },
+    {
+      "date": "2025-07-28",
+      "supply": 5221,
+      "debt": 111
+    },
+    {
+      "date": "2025-07-29",
+      "supply": 5303,
+      "debt": 86
+    },
+    {
+      "date": "2025-07-30",
+      "supply": 5284,
+      "debt": 98
+    },
+    {
+      "date": "2025-07-31",
+      "supply": 4906,
+      "debt": 97
+    },
+    {
+      "date": "2025-08-01",
+      "supply": 5650,
+      "debt": 135
+    },
+    {
+      "date": "2025-08-02",
+      "supply": 5182,
+      "debt": 55
+    },
+    {
+      "date": "2025-08-03",
+      "supply": 4625,
+      "debt": 50
+    },
+    {
+      "date": "2025-08-04",
+      "supply": 5353,
+      "debt": 48
+    },
+    {
+      "date": "2025-08-05",
+      "supply": 4276,
+      "debt": 60
+    },
+    {
+      "date": "2025-08-06",
+      "supply": 3154,
+      "debt": 100
+    },
+    {
+      "date": "2025-08-07",
+      "supply": 5206,
+      "debt": 194
+    },
+    {
+      "date": "2025-08-08",
+      "supply": 6449,
+      "debt": 213
+    },
+    {
+      "date": "2025-08-09",
+      "supply": 4947,
+      "debt": 109
+    },
+    {
+      "date": "2025-08-10",
+      "supply": 4083,
+      "debt": 99
+    },
+    {
+      "date": "2025-08-11",
+      "supply": 4690,
+      "debt": 155
+    },
+    {
+      "date": "2025-08-12",
+      "supply": 4360,
+      "debt": 184
+    },
+    {
+      "date": "2025-08-13",
+      "supply": 4860,
+      "debt": 155
+    },
+    {
+      "date": "2025-08-14",
+      "supply": 5434,
+      "debt": 303
+    },
+    {
+      "date": "2025-08-15",
+      "supply": 4665,
+      "debt": 135
+    },
+    {
+      "date": "2025-08-16",
+      "supply": 4934,
+      "debt": 68
+    },
+    {
+      "date": "2025-08-17",
+      "supply": 4693,
+      "debt": 86
+    },
+    {
+      "date": "2025-08-18",
+      "supply": 4271,
+      "debt": 117
+    },
+    {
+      "date": "2025-08-19",
+      "supply": 4369,
+      "debt": 170
+    },
+    {
+      "date": "2025-08-20",
+      "supply": 4949,
+      "debt": 97
+    },
+    {
+      "date": "2025-08-21",
+      "supply": 5916,
+      "debt": 95
+    },
+    {
+      "date": "2025-08-22",
+      "supply": 7446,
+      "debt": 306
+    },
+    {
+      "date": "2025-08-23",
+      "supply": 4321,
+      "debt": 139
+    },
+    {
+      "date": "2025-08-24",
+      "supply": 4864,
+      "debt": 118
+    },
+    {
+      "date": "2025-08-25",
+      "supply": 6410,
+      "debt": 166
+    },
+    {
+      "date": "2025-08-26",
+      "supply": 5008,
+      "debt": 118
+    },
+    {
+      "date": "2025-08-27",
+      "supply": 3774,
+      "debt": 121
+    },
+    {
+      "date": "2025-08-28",
+      "supply": 4387,
+      "debt": 104
+    },
+    {
+      "date": "2025-08-29",
+      "supply": 5154,
+      "debt": 92
+    },
+    {
+      "date": "2025-08-30",
+      "supply": 5671,
+      "debt": 70
+    },
+    {
+      "date": "2025-08-31",
+      "supply": 4706,
+      "debt": 73
+    },
+    {
+      "date": "2025-09-01",
+      "supply": 6383,
+      "debt": 103
+    },
+    {
+      "date": "2025-09-02",
+      "supply": 5396,
+      "debt": 77
+    },
+    {
+      "date": "2025-09-03",
+      "supply": 5559,
+      "debt": 88
+    },
+    {
+      "date": "2025-09-04",
+      "supply": 5648,
+      "debt": 108
+    },
+    {
+      "date": "2025-09-05",
+      "supply": 4436,
+      "debt": 113
+    },
+    {
+      "date": "2025-09-06",
+      "supply": 3996,
+      "debt": 68
+    },
+    {
+      "date": "2025-09-07",
+      "supply": 3384,
+      "debt": 62
+    },
+    {
+      "date": "2025-09-08",
+      "supply": 3233,
+      "debt": 75
+    },
+    {
+      "date": "2025-09-09",
+      "supply": 3497,
+      "debt": 52
+    },
+    {
+      "date": "2025-09-10",
+      "supply": 3499,
+      "debt": 73
+    },
+    {
+      "date": "2025-09-11",
+      "supply": 3647,
+      "debt": 90
+    },
+    {
+      "date": "2025-09-12",
+      "supply": 4849,
+      "debt": 75
+    },
+    {
+      "date": "2025-09-13",
+      "supply": 4221,
+      "debt": 75
+    },
+    {
+      "date": "2025-09-14",
+      "supply": 3855,
+      "debt": 46
+    },
+    {
+      "date": "2025-09-15",
+      "supply": 3614,
+      "debt": 91
+    },
+    {
+      "date": "2025-09-16",
+      "supply": 4337,
+      "debt": 104
+    },
+    {
+      "date": "2025-09-17",
+      "supply": 4839,
+      "debt": 82
+    },
+    {
+      "date": "2025-09-18",
+      "supply": 3939,
+      "debt": 117
+    },
+    {
+      "date": "2025-09-19",
+      "supply": 3819,
+      "debt": 83
+    },
+    {
+      "date": "2025-09-20",
+      "supply": 3330,
+      "debt": 37
+    },
+    {
+      "date": "2025-09-21",
+      "supply": 2974,
+      "debt": 52
+    },
+    {
+      "date": "2025-09-22",
+      "supply": 5113,
+      "debt": 235
+    },
+    {
+      "date": "2025-09-23",
+      "supply": 5266,
+      "debt": 58
+    },
+    {
+      "date": "2025-09-24",
+      "supply": 3953,
+      "debt": 61
+    },
+    {
+      "date": "2025-09-25",
+      "supply": 4797,
+      "debt": 187
+    },
+    {
+      "date": "2025-09-26",
+      "supply": 5123,
+      "debt": 118
+    },
+    {
+      "date": "2025-09-27",
+      "supply": 3751,
+      "debt": 66
+    },
+    {
+      "date": "2025-09-28",
+      "supply": 3804,
+      "debt": 84
+    },
+    {
+      "date": "2025-09-29",
+      "supply": 4692,
+      "debt": 212
+    },
+    {
+      "date": "2025-09-30",
+      "supply": 5612,
+      "debt": 169
+    },
+    {
+      "date": "2025-10-01",
+      "supply": 4639,
+      "debt": 122
+    },
+    {
+      "date": "2025-10-02",
+      "supply": 4780,
+      "debt": 97
+    },
+    {
+      "date": "2025-10-03",
+      "supply": 5276,
+      "debt": 147
+    },
+    {
+      "date": "2025-10-04",
+      "supply": 4035,
+      "debt": 56
+    },
+    {
+      "date": "2025-10-05",
+      "supply": 3337,
+      "debt": 63
+    },
+    {
+      "date": "2025-10-06",
+      "supply": 3855,
+      "debt": 88
+    },
+    {
+      "date": "2025-10-07",
+      "supply": 5119,
+      "debt": 111
+    },
+    {
+      "date": "2025-10-08",
+      "supply": 5329,
+      "debt": 57
+    },
+    {
+      "date": "2025-10-09",
+      "supply": 5611,
+      "debt": 101
+    },
+    {
+      "date": "2025-10-10",
+      "supply": 7491,
+      "debt": 273
+    },
+    {
+      "date": "2025-10-11",
+      "supply": 7038,
+      "debt": 244
+    },
+    {
+      "date": "2025-10-12",
+      "supply": 6782,
+      "debt": 157
+    },
+    {
+      "date": "2025-10-13",
+      "supply": 5703,
+      "debt": 90
+    },
+    {
+      "date": "2025-10-14",
+      "supply": 7130,
+      "debt": 177
+    },
+    {
+      "date": "2025-10-15",
+      "supply": 5503,
+      "debt": 145
+    },
+    {
+      "date": "2025-10-16",
+      "supply": 6222,
+      "debt": 122
+    },
+    {
+      "date": "2025-10-17",
+      "supply": 6888,
+      "debt": 167
+    },
+    {
+      "date": "2025-10-18",
+      "supply": 4258,
+      "debt": 48
+    },
+    {
+      "date": "2025-10-19",
+      "supply": 4061,
+      "debt": 56
+    },
+    {
+      "date": "2025-10-20",
+      "supply": 4520,
+      "debt": 79
+    },
+    {
+      "date": "2025-10-21",
+      "supply": 5793,
+      "debt": 110
+    },
+    {
+      "date": "2025-10-22",
+      "supply": 5642,
+      "debt": 82
+    },
+    {
+      "date": "2025-10-23",
+      "supply": 5347,
+      "debt": 86
+    },
+    {
+      "date": "2025-10-24",
+      "supply": 5333,
+      "debt": 110
+    },
+    {
+      "date": "2025-10-25",
+      "supply": 4920,
+      "debt": 39
+    },
+    {
+      "date": "2025-10-26",
+      "supply": 4830,
+      "debt": 74
+    },
+    {
+      "date": "2025-10-27",
+      "supply": 8665,
+      "debt": 118
+    },
+    {
+      "date": "2025-10-28",
+      "supply": 5967,
+      "debt": 83
+    },
+    {
+      "date": "2025-10-29",
+      "supply": 5100,
+      "debt": 85
+    },
+    {
+      "date": "2025-10-30",
+      "supply": 4654,
+      "debt": 146
+    },
+    {
+      "date": "2025-10-31",
+      "supply": 5094,
+      "debt": 87
+    },
+    {
+      "date": "2025-11-01",
+      "supply": 4035,
+      "debt": 62
+    },
+    {
+      "date": "2025-11-02",
+      "supply": 3474,
+      "debt": 56
+    },
+    {
+      "date": "2025-11-03",
+      "supply": 4947,
+      "debt": 235
+    },
+    {
+      "date": "2025-11-04",
+      "supply": 3868,
+      "debt": 185
+    },
+    {
+      "date": "2025-11-05",
+      "supply": 3355,
+      "debt": 53
+    },
+    {
+      "date": "2025-11-06",
+      "supply": 3060,
+      "debt": 42
+    },
+    {
+      "date": "2025-11-07",
+      "supply": 3127,
+      "debt": 17
+    },
+    {
+      "date": "2025-11-08",
+      "supply": 3199,
+      "debt": 12
+    },
+    {
+      "date": "2025-11-09",
+      "supply": 2413,
+      "debt": 4
+    },
+    {
+      "date": "2025-11-10",
+      "supply": 2795,
+      "debt": 16
+    },
+    {
+      "date": "2025-11-11",
+      "supply": 2916,
+      "debt": 57
+    },
+    {
+      "date": "2025-11-12",
+      "supply": 3418,
+      "debt": 101
+    },
+    {
+      "date": "2025-11-13",
+      "supply": 3888,
+      "debt": 162
+    },
+    {
+      "date": "2025-11-14",
+      "supply": 3600,
+      "debt": 154
+    },
+    {
+      "date": "2025-11-15",
+      "supply": 3692,
+      "debt": 53
+    },
+    {
+      "date": "2025-11-16",
+      "supply": 3689,
+      "debt": 84
+    },
+    {
+      "date": "2025-11-17",
+      "supply": 4395,
+      "debt": 134
+    },
+    {
+      "date": "2025-11-18",
+      "supply": 3871,
+      "debt": 59
+    },
+    {
+      "date": "2025-11-19",
+      "supply": 6173,
+      "debt": 174
+    },
+    {
+      "date": "2025-11-20",
+      "supply": 4423,
+      "debt": 113
+    },
+    {
+      "date": "2025-11-21",
+      "supply": 5384,
+      "debt": 206
+    },
+    {
+      "date": "2025-11-22",
+      "supply": 4169,
+      "debt": 46
+    },
+    {
+      "date": "2025-11-23",
+      "supply": 4122,
+      "debt": 53
+    },
+    {
+      "date": "2025-11-24",
+      "supply": 4176,
+      "debt": 102
+    },
+    {
+      "date": "2025-11-25",
+      "supply": 3841,
+      "debt": 104
+    },
+    {
+      "date": "2025-11-26",
+      "supply": 4292,
+      "debt": 227
+    },
+    {
+      "date": "2025-11-27",
+      "supply": 4141,
+      "debt": 101
+    },
+    {
+      "date": "2025-11-28",
+      "supply": 4948,
+      "debt": 247
+    },
+    {
+      "date": "2025-11-29",
+      "supply": 4896,
+      "debt": 41
+    },
+    {
+      "date": "2025-11-30",
+      "supply": 3722,
+      "debt": 32
+    },
+    {
+      "date": "2025-12-01",
+      "supply": 4899,
+      "debt": 168
+    },
+    {
+      "date": "2025-12-02",
+      "supply": 4252,
+      "debt": 131
+    },
+    {
+      "date": "2025-12-03",
+      "supply": 4060,
+      "debt": 74
+    },
+    {
+      "date": "2025-12-04",
+      "supply": 4329,
+      "debt": 70
+    },
+    {
+      "date": "2025-12-05",
+      "supply": 4258,
+      "debt": 41
+    },
+    {
+      "date": "2025-12-06",
+      "supply": 3681,
+      "debt": 27
+    },
+    {
+      "date": "2025-12-07",
+      "supply": 3642,
+      "debt": 43
+    },
+    {
+      "date": "2025-12-08",
+      "supply": 3870,
+      "debt": 44
+    },
+    {
+      "date": "2025-12-09",
+      "supply": 3950,
+      "debt": 100
+    },
+    {
+      "date": "2025-12-10",
+      "supply": 4356,
+      "debt": 324
+    },
+    {
+      "date": "2025-12-11",
+      "supply": 4557,
+      "debt": 186
+    },
+    {
+      "date": "2025-12-12",
+      "supply": 5511,
+      "debt": 103
+    },
+    {
+      "date": "2025-12-13",
+      "supply": 5679,
+      "debt": 61
+    },
+    {
+      "date": "2025-12-14",
+      "supply": 5715,
+      "debt": 151
+    },
+    {
+      "date": "2025-12-15",
+      "supply": 6523,
+      "debt": 219
+    },
+    {
+      "date": "2025-12-16",
+      "supply": 6379,
+      "debt": 462
+    },
+    {
+      "date": "2025-12-17",
+      "supply": 6786,
+      "debt": 780
+    },
+    {
+      "date": "2025-12-18",
+      "supply": 7299,
+      "debt": 349
+    },
+    {
+      "date": "2025-12-19",
+      "supply": 6679,
+      "debt": 228
+    },
+    {
+      "date": "2025-12-20",
+      "supply": 6240,
+      "debt": 20
+    },
+    {
+      "date": "2025-12-21",
+      "supply": 5902,
+      "debt": 38
+    },
+    {
+      "date": "2025-12-22",
+      "supply": 5966,
+      "debt": 89
+    },
+    {
+      "date": "2025-12-23",
+      "supply": 5160,
+      "debt": 186
+    },
+    {
+      "date": "2025-12-24",
+      "supply": 5514,
+      "debt": 54
+    },
+    {
+      "date": "2025-12-25",
+      "supply": 4732,
+      "debt": 443
+    },
+    {
+      "date": "2025-12-26",
+      "supply": 5278,
+      "debt": 588
+    },
+    {
+      "date": "2025-12-27",
+      "supply": 4492,
+      "debt": 405
+    },
+    {
+      "date": "2025-12-28",
+      "supply": 4636,
+      "debt": 136
+    },
+    {
+      "date": "2025-12-29",
+      "supply": 5997,
+      "debt": 970
+    },
+    {
+      "date": "2025-12-30",
+      "supply": 6236,
+      "debt": 494
+    },
+    {
+      "date": "2025-12-31",
+      "supply": 6378,
+      "debt": 91
+    },
+    {
+      "date": "2026-01-01",
+      "supply": 5243,
+      "debt": 46
+    },
+    {
+      "date": "2026-01-02",
+      "supply": 6529,
+      "debt": 83
+    },
+    {
+      "date": "2026-01-03",
+      "supply": 5719,
+      "debt": 57
+    },
+    {
+      "date": "2026-01-04",
+      "supply": 5350,
+      "debt": 25
+    },
+    {
+      "date": "2026-01-05",
+      "supply": 5412,
+      "debt": 97
+    },
+    {
+      "date": "2026-01-06",
+      "supply": 5305,
+      "debt": 183
+    },
+    {
+      "date": "2026-01-07",
+      "supply": 4780,
+      "debt": 142
+    },
+    {
+      "date": "2026-01-08",
+      "supply": 5839,
+      "debt": 263
+    },
+    {
+      "date": "2026-01-09",
+      "supply": 6013,
+      "debt": 191
+    },
+    {
+      "date": "2026-01-10",
+      "supply": 5931,
+      "debt": 16
+    },
+    {
+      "date": "2026-01-11",
+      "supply": 5436,
+      "debt": 45
+    },
+    {
+      "date": "2026-01-12",
+      "supply": 5454,
+      "debt": 228
+    },
+    {
+      "date": "2026-01-13",
+      "supply": 5898,
+      "debt": 165
+    },
+    {
+      "date": "2026-01-14",
+      "supply": 6252,
+      "debt": 155
+    },
+    {
+      "date": "2026-01-15",
+      "supply": 6111,
+      "debt": 228
+    },
+    {
+      "date": "2026-01-16",
+      "supply": 6756,
+      "debt": 165
+    },
+    {
+      "date": "2026-01-17",
+      "supply": 7348,
+      "debt": 29
+    },
+    {
+      "date": "2026-01-18",
+      "supply": 6539,
+      "debt": 51
+    },
+    {
+      "date": "2026-01-19",
+      "supply": 6687,
+      "debt": 120
+    },
+    {
+      "date": "2026-01-20",
+      "supply": 6539,
+      "debt": 459
+    },
+    {
+      "date": "2026-01-21",
+      "supply": 6518,
+      "debt": 591
+    },
+    {
+      "date": "2026-01-22",
+      "supply": 5670,
+      "debt": 311
+    },
+    {
+      "date": "2026-01-23",
+      "supply": 6035,
+      "debt": 389
+    },
+    {
+      "date": "2026-01-24",
+      "supply": 5697,
+      "debt": 85
+    },
+    {
+      "date": "2026-01-25",
+      "supply": 6065,
+      "debt": 463
+    },
+    {
+      "date": "2026-01-26",
+      "supply": 6560,
+      "debt": 302
+    },
+    {
+      "date": "2026-01-27",
+      "supply": 6972,
+      "debt": 405
+    },
+    {
+      "date": "2026-01-28",
+      "supply": 5944,
+      "debt": 27
+    },
+    {
+      "date": "2026-01-29",
+      "supply": 6265,
+      "debt": 236
+    },
+    {
+      "date": "2026-01-30",
+      "supply": 7941,
+      "debt": 434
+    },
+    {
+      "date": "2026-01-31",
+      "supply": 8636,
+      "debt": 746
+    },
+    {
+      "date": "2026-02-01",
+      "supply": 7587,
+      "debt": 647
+    },
+    {
+      "date": "2026-02-02",
+      "supply": 8081,
+      "debt": 568
+    },
+    {
+      "date": "2026-02-03",
+      "supply": 7754,
+      "debt": 1004
+    },
+    {
+      "date": "2026-02-04",
+      "supply": 9393,
+      "debt": 1145
+    },
+    {
+      "date": "2026-02-05",
+      "supply": 11375,
+      "debt": 1353
+    },
+    {
+      "date": "2026-02-06",
+      "supply": 14104,
+      "debt": 367
+    },
+    {
+      "date": "2026-02-07",
+      "supply": 10551,
+      "debt": 215
+    },
+    {
+      "date": "2026-02-08",
+      "supply": 6010,
+      "debt": 175
+    },
+    {
+      "date": "2026-02-09",
+      "supply": 7048,
+      "debt": 301
+    },
+    {
+      "date": "2026-02-10",
+      "supply": 7514,
+      "debt": 198
+    },
+    {
+      "date": "2026-02-11",
+      "supply": 7223,
+      "debt": 302
+    },
+    {
+      "date": "2026-02-12",
+      "supply": 7229,
+      "debt": 164
+    },
+    {
+      "date": "2026-02-13",
+      "supply": 7310,
+      "debt": 176
+    },
+    {
+      "date": "2026-02-14",
+      "supply": 7460,
+      "debt": 153
+    },
+    {
+      "date": "2026-02-15",
+      "supply": 5332,
+      "debt": 161
+    },
+    {
+      "date": "2026-02-16",
+      "supply": 5153,
+      "debt": 102
+    },
+    {
+      "date": "2026-02-17",
+      "supply": 5292,
+      "debt": 81
+    },
+    {
+      "date": "2026-02-18",
+      "supply": 6916,
+      "debt": 122
+    },
+    {
+      "date": "2026-02-19",
+      "supply": 6126,
+      "debt": 86
+    },
+    {
+      "date": "2026-02-20",
+      "supply": 5094,
+      "debt": 65
+    },
+    {
+      "date": "2026-02-21",
+      "supply": 4004,
+      "debt": 65
+    },
+    {
+      "date": "2026-02-22",
+      "supply": 3483,
+      "debt": 34
+    },
+    {
+      "date": "2026-02-23",
+      "supply": 3348,
+      "debt": 57
+    },
+    {
+      "date": "2026-02-24",
+      "supply": 2982,
+      "debt": 96
+    },
+    {
+      "date": "2026-02-25",
+      "supply": 4087,
+      "debt": 93
+    },
+    {
+      "date": "2026-02-26",
+      "supply": 4347,
+      "debt": 76
+    },
+    {
+      "date": "2026-02-27",
+      "supply": 3209,
+      "debt": 57
+    },
+    {
+      "date": "2026-02-28",
+      "supply": 3283,
+      "debt": 37
+    }
+  ]
+}
